@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		530DAC6D1ED3DF1000E05433 /* map1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530DAC6C1ED3DF1000E05433 /* map1VC.swift */; };
+		532508C41EB7C3660043B779 /* battleOfCatmixia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532508C01EB7C3660043B779 /* battleOfCatmixia.swift */; };
+		532508C51EB7C3660043B779 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532508C11EB7C3660043B779 /* GameOverScene.swift */; };
+		532508C61EB7C3660043B779 /* gameWonScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532508C21EB7C3660043B779 /* gameWonScene.swift */; };
+		532508C71EB7C3660043B779 /* tapToBegin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532508C31EB7C3660043B779 /* tapToBegin.swift */; };
+		532508D91EB7CA7D0043B779 /* Whisker_Wars.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 532508D71EB7CA7D0043B779 /* Whisker_Wars.xcdatamodeld */; };
+		532E677C202EAFAF0011A16C /* coinSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 532E677B202EAFAA0011A16C /* coinSound.mp3 */; };
+		5334035C1EA46D3300A2F2D6 /* level2Cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 5334035B1EA46D3300A2F2D6 /* level2Cover.png */; };
+		5334035E1EA46D4D00A2F2D6 /* level3Cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 5334035D1EA46D4D00A2F2D6 /* level3Cover.png */; };
+		533403611EA5311A00A2F2D6 /* privateWhiskers.png in Resources */ = {isa = PBXBuildFile; fileRef = 5334035F1EA5311A00A2F2D6 /* privateWhiskers.png */; };
+		533403621EA5311A00A2F2D6 /* leftArm.png in Resources */ = {isa = PBXBuildFile; fileRef = 533403601EA5311A00A2F2D6 /* leftArm.png */; };
+		533403641EA6CEC000A2F2D6 /* bulletWave.png in Resources */ = {isa = PBXBuildFile; fileRef = 533403631EA6CEC000A2F2D6 /* bulletWave.png */; };
+		533403681EA946BE00A2F2D6 /* meteor.png in Resources */ = {isa = PBXBuildFile; fileRef = 533403671EA946BE00A2F2D6 /* meteor.png */; };
+		5334036A1EA9C2FF00A2F2D6 /* superMeteor.png in Resources */ = {isa = PBXBuildFile; fileRef = 533403691EA9C2FE00A2F2D6 /* superMeteor.png */; };
+		5334036D1EA9DBAE00A2F2D6 /* pressThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5334036B1EA9DBAE00A2F2D6 /* pressThumb.png */; };
+		5334036E1EA9DBAF00A2F2D6 /* dragThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5334036C1EA9DBAE00A2F2D6 /* dragThumb.png */; };
+		533403701EAA85BB00A2F2D6 /* iPhoneDrawing.png in Resources */ = {isa = PBXBuildFile; fileRef = 5334036F1EAA85BB00A2F2D6 /* iPhoneDrawing.png */; };
+		5334B17B2027F57800E56A50 /* background4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5334B17A2027F57700E56A50 /* background4.png */; };
+		5334B17D2027F90400E56A50 /* hitTwiceBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 5334B17C2027F90400E56A50 /* hitTwiceBackground.png */; };
+		5334B17F2027F90800E56A50 /* hitOnceBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 5334B17E2027F90800E56A50 /* hitOnceBackground.png */; };
+		5375BB901E847CCF0058D376 /* cancel@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375BB8A1E847CCF0058D376 /* cancel@1x.png */; };
+		5375BB911E847CCF0058D376 /* cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375BB8B1E847CCF0058D376 /* cancel@2x.png */; };
+		5375BB921E847CCF0058D376 /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375BB8C1E847CCF0058D376 /* setting@2x.png */; };
+		5375BB931E847CCF0058D376 /* setting@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375BB8D1E847CCF0058D376 /* setting@1x.png */; };
+		5375BB941E847CCF0058D376 /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375BB8E1E847CCF0058D376 /* home@2x.png */; };
+		5375BB951E847CCF0058D376 /* home@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5375BB8F1E847CCF0058D376 /* home@1x.png */; };
+		539BB1FB202F8E1F00820E20 /* fishShipH2.png in Resources */ = {isa = PBXBuildFile; fileRef = 539BB1F7202F8E1D00820E20 /* fishShipH2.png */; };
+		539BB1FC202F8E1F00820E20 /* fishShip.png in Resources */ = {isa = PBXBuildFile; fileRef = 539BB1F8202F8E1E00820E20 /* fishShip.png */; };
+		539BB1FD202F8E1F00820E20 /* fishShipH1.png in Resources */ = {isa = PBXBuildFile; fileRef = 539BB1F9202F8E1F00820E20 /* fishShipH1.png */; };
+		539BB1FE202F8E1F00820E20 /* fishShipH3.png in Resources */ = {isa = PBXBuildFile; fileRef = 539BB1FA202F8E1F00820E20 /* fishShipH3.png */; };
+		53A2D36C1E9D7346000A8A21 /* Break Out - Lower Volume.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53A2D36B1E9D7346000A8A21 /* Break Out - Lower Volume.mp3 */; };
+		53A5AC7020217A6E00C21B5A /* privateLickensHidden.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A5AC6E20217A6D00C21B5A /* privateLickensHidden.png */; };
+		53A5AC7120217A6E00C21B5A /* privateLickens.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A5AC6F20217A6D00C21B5A /* privateLickens.png */; };
+		53B782C8201E982D002D5AD4 /* NewHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B782C7201E982D002D5AD4 /* NewHomeScreen.swift */; };
+		53B782C9201E9E60002D5AD4 /* Meloody-2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 53B782C6201E97B1002D5AD4 /* Meloody-2.m4a */; };
+		53B782CD201EC610002D5AD4 /* socialShare.png in Resources */ = {isa = PBXBuildFile; fileRef = 53B782CC201EC610002D5AD4 /* socialShare.png */; };
+		53B782CF201EF7E2002D5AD4 /* upgradeCat.png in Resources */ = {isa = PBXBuildFile; fileRef = 53B782CE201EF7E2002D5AD4 /* upgradeCat.png */; };
+		53C88BAD2022A5BC0057D81D /* sergantPursington.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C88BAC2022A5BC0057D81D /* sergantPursington.png */; };
+		53C88BAF2022AB350057D81D /* commanderKitty.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C88BAE2022AB350057D81D /* commanderKitty.png */; };
+		53C88BB12022B0120057D81D /* majorMittens.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C88BB02022B0120057D81D /* majorMittens.png */; };
+		53CC1200202E7AB90017ECD1 /* if_home_126572.png in Resources */ = {isa = PBXBuildFile; fileRef = 53CC11FF202E7AB90017ECD1 /* if_home_126572.png */; };
+		53CC1204202E7EFB0017ECD1 /* WWHitOnce.png in Resources */ = {isa = PBXBuildFile; fileRef = 53CC1201202E7EF70017ECD1 /* WWHitOnce.png */; };
+		53CC1205202E7EFB0017ECD1 /* WWHitTwice.png in Resources */ = {isa = PBXBuildFile; fileRef = 53CC1202202E7EF80017ECD1 /* WWHitTwice.png */; };
+		53CC1206202E7EFB0017ECD1 /* WWFINAL.png in Resources */ = {isa = PBXBuildFile; fileRef = 53CC1203202E7EFA0017ECD1 /* WWFINAL.png */; };
+		53EF6A1E1EF1AD3500A08F92 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EF6A1D1EF1AD3500A08F92 /* StoreKit.framework */; };
+		53F1E2681E5CDA8900C13280 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F1E2671E5CDA8900C13280 /* AppDelegate.swift */; };
+		53F1E26A1E5CDA8900C13280 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E2691E5CDA8900C13280 /* GameScene.sks */; };
+		53F1E26C1E5CDA8900C13280 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E26B1E5CDA8900C13280 /* Actions.sks */; };
+		53F1E2731E5CDA8900C13280 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E2711E5CDA8900C13280 /* Main.storyboard */; };
+		53F1E2751E5CDA8A00C13280 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E2741E5CDA8A00C13280 /* Assets.xcassets */; };
+		53F1E2781E5CDA8A00C13280 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E2761E5CDA8A00C13280 /* LaunchScreen.storyboard */; };
+		53F1E2C01E6E21C200C13280 /* pushaKitty.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E2BF1E6E21C200C13280 /* pushaKitty.png */; };
+		53F1E2C51E6E21D500C13280 /* meowbot.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E2C31E6E21D500C13280 /* meowbot.png */; };
+		53F1E2C61E6E21D500C13280 /* meowbot2.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E2C41E6E21D500C13280 /* meowbot2.png */; };
+		53F1E2C81E6E21E600C13280 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E2C71E6E21E600C13280 /* background.png */; };
+		53F1E2D01E6F549200C13280 /* Cat-meow-10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E2CF1E6F549200C13280 /* Cat-meow-10.mp3 */; };
+		53F1E2D21E6F5D9D00C13280 /* hairBall.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E2D11E6F5D9C00C13280 /* hairBall.png */; };
+		53F1E2D61E73365300C13280 /* explosionWhiskerWars.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E2D51E73365300C13280 /* explosionWhiskerWars.png */; };
+		53F1E2D91E733E7000C13280 /* explosion_01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E2D71E733E7000C13280 /* explosion_01.wav */; };
+		53F1E2DA1E733E7000C13280 /* explosion_03.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E2D81E733E7000C13280 /* explosion_03.wav */; };
+		53F1E2DC1E733FA100C13280 /* themeSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E2DB1E733FA100C13280 /* themeSound.mp3 */; };
+		53F1E2DF1E761EBB00C13280 /* House-Paint-Slab.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E2DE1E761EBB00C13280 /* House-Paint-Slab.ttf */; };
+		53F1E2E71E7B149D00C13280 /* play-circle-fill-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E2E61E7B149D00C13280 /* play-circle-fill-128.png */; };
+		53F1E2ED1E7B14AF00C13280 /* cog-settings-alt-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E2EC1E7B14AF00C13280 /* cog-settings-alt-128.png */; };
+		53F1E2EF1E7B151700C13280 /* whiskerWarIconNoBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F1E2EE1E7B151700C13280 /* whiskerWarIconNoBack.png */; };
+		53F9535D2051D66100B169BA /* introVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F9535C2051D66100B169BA /* introVC.swift */; };
+		53F95360205250E100B169BA /* My Movie 7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 53F9535F205250DE00B169BA /* My Movie 7.gif */; };
+		853C825A92E4969A78BCC267 /* Pods_Whisker_Wars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8418F0BD31583E8823248A /* Pods_Whisker_Wars.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46BD8177935A705B439CED4E /* Pods-Whisker Wars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whisker Wars.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whisker Wars/Pods-Whisker Wars.release.xcconfig"; sourceTree = "<group>"; };
+		530DAC6C1ED3DF1000E05433 /* map1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = map1VC.swift; sourceTree = "<group>"; };
+		532508C01EB7C3660043B779 /* battleOfCatmixia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = battleOfCatmixia.swift; sourceTree = "<group>"; };
+		532508C11EB7C3660043B779 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		532508C21EB7C3660043B779 /* gameWonScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gameWonScene.swift; sourceTree = "<group>"; };
+		532508C31EB7C3660043B779 /* tapToBegin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tapToBegin.swift; sourceTree = "<group>"; };
+		532508D81EB7CA7D0043B779 /* Whisker_Wars.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Whisker_Wars.xcdatamodel; sourceTree = "<group>"; };
+		532E677B202EAFAA0011A16C /* coinSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coinSound.mp3; sourceTree = "<group>"; };
+		5334035B1EA46D3300A2F2D6 /* level2Cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level2Cover.png; sourceTree = "<group>"; };
+		5334035D1EA46D4D00A2F2D6 /* level3Cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level3Cover.png; sourceTree = "<group>"; };
+		5334035F1EA5311A00A2F2D6 /* privateWhiskers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = privateWhiskers.png; sourceTree = "<group>"; };
+		533403601EA5311A00A2F2D6 /* leftArm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftArm.png; sourceTree = "<group>"; };
+		533403631EA6CEC000A2F2D6 /* bulletWave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bulletWave.png; sourceTree = "<group>"; };
+		533403671EA946BE00A2F2D6 /* meteor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meteor.png; sourceTree = "<group>"; };
+		533403691EA9C2FE00A2F2D6 /* superMeteor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = superMeteor.png; sourceTree = "<group>"; };
+		5334036B1EA9DBAE00A2F2D6 /* pressThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pressThumb.png; sourceTree = "<group>"; };
+		5334036C1EA9DBAE00A2F2D6 /* dragThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dragThumb.png; sourceTree = "<group>"; };
+		5334036F1EAA85BB00A2F2D6 /* iPhoneDrawing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneDrawing.png; sourceTree = "<group>"; };
+		5334B17A2027F57700E56A50 /* background4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background4.png; sourceTree = "<group>"; };
+		5334B17C2027F90400E56A50 /* hitTwiceBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hitTwiceBackground.png; sourceTree = "<group>"; };
+		5334B17E2027F90800E56A50 /* hitOnceBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hitOnceBackground.png; sourceTree = "<group>"; };
+		5375BB8A1E847CCF0058D376 /* cancel@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel@1x.png"; sourceTree = "<group>"; };
+		5375BB8B1E847CCF0058D376 /* cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel@2x.png"; sourceTree = "<group>"; };
+		5375BB8C1E847CCF0058D376 /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@2x.png"; sourceTree = "<group>"; };
+		5375BB8D1E847CCF0058D376 /* setting@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@1x.png"; sourceTree = "<group>"; };
+		5375BB8E1E847CCF0058D376 /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
+		5375BB8F1E847CCF0058D376 /* home@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@1x.png"; sourceTree = "<group>"; };
+		539BB1F7202F8E1D00820E20 /* fishShipH2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fishShipH2.png; sourceTree = "<group>"; };
+		539BB1F8202F8E1E00820E20 /* fishShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fishShip.png; sourceTree = "<group>"; };
+		539BB1F9202F8E1F00820E20 /* fishShipH1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fishShipH1.png; sourceTree = "<group>"; };
+		539BB1FA202F8E1F00820E20 /* fishShipH3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fishShipH3.png; sourceTree = "<group>"; };
+		53A2D36B1E9D7346000A8A21 /* Break Out - Lower Volume.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Break Out - Lower Volume.mp3"; sourceTree = "<group>"; };
+		53A5AC6E20217A6D00C21B5A /* privateLickensHidden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = privateLickensHidden.png; sourceTree = "<group>"; };
+		53A5AC6F20217A6D00C21B5A /* privateLickens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = privateLickens.png; sourceTree = "<group>"; };
+		53B782C6201E97B1002D5AD4 /* Meloody-2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Meloody-2.m4a"; sourceTree = "<group>"; };
+		53B782C7201E982D002D5AD4 /* NewHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHomeScreen.swift; sourceTree = "<group>"; };
+		53B782CC201EC610002D5AD4 /* socialShare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = socialShare.png; sourceTree = "<group>"; };
+		53B782CE201EF7E2002D5AD4 /* upgradeCat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upgradeCat.png; sourceTree = "<group>"; };
+		53C88BAC2022A5BC0057D81D /* sergantPursington.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sergantPursington.png; sourceTree = "<group>"; };
+		53C88BAE2022AB350057D81D /* commanderKitty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = commanderKitty.png; sourceTree = "<group>"; };
+		53C88BB02022B0120057D81D /* majorMittens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = majorMittens.png; sourceTree = "<group>"; };
+		53CC11FF202E7AB90017ECD1 /* if_home_126572.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = if_home_126572.png; sourceTree = "<group>"; };
+		53CC1201202E7EF70017ECD1 /* WWHitOnce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WWHitOnce.png; sourceTree = "<group>"; };
+		53CC1202202E7EF80017ECD1 /* WWHitTwice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WWHitTwice.png; sourceTree = "<group>"; };
+		53CC1203202E7EFA0017ECD1 /* WWFINAL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WWFINAL.png; sourceTree = "<group>"; };
+		53EF6A1D1EF1AD3500A08F92 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		53F1E2641E5CDA8900C13280 /* Whisker Wars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whisker Wars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F1E2671E5CDA8900C13280 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		53F1E2691E5CDA8900C13280 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		53F1E26B1E5CDA8900C13280 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		53F1E2721E5CDA8900C13280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53F1E2741E5CDA8A00C13280 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53F1E2771E5CDA8A00C13280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53F1E2791E5CDA8A00C13280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53F1E2BF1E6E21C200C13280 /* pushaKitty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pushaKitty.png; sourceTree = "<group>"; };
+		53F1E2C31E6E21D500C13280 /* meowbot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meowbot.png; sourceTree = "<group>"; };
+		53F1E2C41E6E21D500C13280 /* meowbot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meowbot2.png; sourceTree = "<group>"; };
+		53F1E2C71E6E21E600C13280 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		53F1E2CF1E6F549200C13280 /* Cat-meow-10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Cat-meow-10.mp3"; sourceTree = "<group>"; };
+		53F1E2D11E6F5D9C00C13280 /* hairBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hairBall.png; sourceTree = "<group>"; };
+		53F1E2D51E73365300C13280 /* explosionWhiskerWars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosionWhiskerWars.png; sourceTree = "<group>"; };
+		53F1E2D71E733E7000C13280 /* explosion_01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion_01.wav; sourceTree = "<group>"; };
+		53F1E2D81E733E7000C13280 /* explosion_03.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion_03.wav; sourceTree = "<group>"; };
+		53F1E2DB1E733FA100C13280 /* themeSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = themeSound.mp3; sourceTree = "<group>"; };
+		53F1E2DE1E761EBB00C13280 /* House-Paint-Slab.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "House-Paint-Slab.ttf"; sourceTree = "<group>"; };
+		53F1E2E61E7B149D00C13280 /* play-circle-fill-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-circle-fill-128.png"; sourceTree = "<group>"; };
+		53F1E2EC1E7B14AF00C13280 /* cog-settings-alt-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cog-settings-alt-128.png"; sourceTree = "<group>"; };
+		53F1E2EE1E7B151700C13280 /* whiskerWarIconNoBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiskerWarIconNoBack.png; sourceTree = "<group>"; };
+		53F9535C2051D66100B169BA /* introVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = introVC.swift; sourceTree = "<group>"; };
+		53F9535E20521BD500B169BA /* intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = intro.mp4; sourceTree = "<group>"; };
+		53F9535F205250DE00B169BA /* My Movie 7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "My Movie 7.gif"; sourceTree = "<group>"; };
+		618975CEDBA9F31355B343AD /* Pods-Whisker Wars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whisker Wars.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Whisker Wars/Pods-Whisker Wars.debug.xcconfig"; sourceTree = "<group>"; };
+		FE8418F0BD31583E8823248A /* Pods_Whisker_Wars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whisker_Wars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53F1E2611E5CDA8900C13280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853C825A92E4969A78BCC267 /* Pods_Whisker_Wars.framework in Frameworks */,
+				53EF6A1E1EF1AD3500A08F92 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A56B757C65C8217B2DE76E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				618975CEDBA9F31355B343AD /* Pods-Whisker Wars.debug.xcconfig */,
+				46BD8177935A705B439CED4E /* Pods-Whisker Wars.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		530DAC6B1ECCC3F300E05433 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				53F9535F205250DE00B169BA /* My Movie 7.gif */,
+				53F9535E20521BD500B169BA /* intro.mp4 */,
+				539BB1F8202F8E1E00820E20 /* fishShip.png */,
+				539BB1F9202F8E1F00820E20 /* fishShipH1.png */,
+				539BB1F7202F8E1D00820E20 /* fishShipH2.png */,
+				539BB1FA202F8E1F00820E20 /* fishShipH3.png */,
+				532E677B202EAFAA0011A16C /* coinSound.mp3 */,
+				53CC1203202E7EFA0017ECD1 /* WWFINAL.png */,
+				53CC1201202E7EF70017ECD1 /* WWHitOnce.png */,
+				53CC1202202E7EF80017ECD1 /* WWHitTwice.png */,
+				53CC11FF202E7AB90017ECD1 /* if_home_126572.png */,
+				5334B17E2027F90800E56A50 /* hitOnceBackground.png */,
+				5334B17C2027F90400E56A50 /* hitTwiceBackground.png */,
+				5334B17A2027F57700E56A50 /* background4.png */,
+				53C88BB02022B0120057D81D /* majorMittens.png */,
+				53C88BAE2022AB350057D81D /* commanderKitty.png */,
+				53C88BAC2022A5BC0057D81D /* sergantPursington.png */,
+				53A5AC6F20217A6D00C21B5A /* privateLickens.png */,
+				53A5AC6E20217A6D00C21B5A /* privateLickensHidden.png */,
+				53B782CE201EF7E2002D5AD4 /* upgradeCat.png */,
+				53B782CC201EC610002D5AD4 /* socialShare.png */,
+				53B782C6201E97B1002D5AD4 /* Meloody-2.m4a */,
+				5334036F1EAA85BB00A2F2D6 /* iPhoneDrawing.png */,
+				5334036B1EA9DBAE00A2F2D6 /* pressThumb.png */,
+				5334036C1EA9DBAE00A2F2D6 /* dragThumb.png */,
+				5334035F1EA5311A00A2F2D6 /* privateWhiskers.png */,
+				533403601EA5311A00A2F2D6 /* leftArm.png */,
+				53F1E2BF1E6E21C200C13280 /* pushaKitty.png */,
+				53F1E2C31E6E21D500C13280 /* meowbot.png */,
+				53F1E2C41E6E21D500C13280 /* meowbot2.png */,
+				53F1E2C71E6E21E600C13280 /* background.png */,
+				53F1E2CF1E6F549200C13280 /* Cat-meow-10.mp3 */,
+				53F1E2D11E6F5D9C00C13280 /* hairBall.png */,
+				53F1E2D51E73365300C13280 /* explosionWhiskerWars.png */,
+				53F1E2D71E733E7000C13280 /* explosion_01.wav */,
+				53F1E2D81E733E7000C13280 /* explosion_03.wav */,
+				53F1E2DB1E733FA100C13280 /* themeSound.mp3 */,
+				53F1E2DE1E761EBB00C13280 /* House-Paint-Slab.ttf */,
+				53F1E2E61E7B149D00C13280 /* play-circle-fill-128.png */,
+				53F1E2EC1E7B14AF00C13280 /* cog-settings-alt-128.png */,
+				53F1E2EE1E7B151700C13280 /* whiskerWarIconNoBack.png */,
+				5375BB8A1E847CCF0058D376 /* cancel@1x.png */,
+				5375BB8B1E847CCF0058D376 /* cancel@2x.png */,
+				5375BB8C1E847CCF0058D376 /* setting@2x.png */,
+				5375BB8D1E847CCF0058D376 /* setting@1x.png */,
+				5375BB8E1E847CCF0058D376 /* home@2x.png */,
+				5375BB8F1E847CCF0058D376 /* home@1x.png */,
+				53A2D36B1E9D7346000A8A21 /* Break Out - Lower Volume.mp3 */,
+				5334035B1EA46D3300A2F2D6 /* level2Cover.png */,
+				5334035D1EA46D4D00A2F2D6 /* level3Cover.png */,
+				533403631EA6CEC000A2F2D6 /* bulletWave.png */,
+				533403671EA946BE00A2F2D6 /* meteor.png */,
+				533403691EA9C2FE00A2F2D6 /* superMeteor.png */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		53F1E25B1E5CDA8900C13280 = {
+			isa = PBXGroup;
+			children = (
+				53F1E2661E5CDA8900C13280 /* Whisker Wars */,
+				530DAC6B1ECCC3F300E05433 /* New Group */,
+				3A56B757C65C8217B2DE76E5 /* Pods */,
+				D93C7345AD1DC6B9CC7F17D6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		53F1E2651E5CDA8900C13280 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53F1E2641E5CDA8900C13280 /* Whisker Wars.app */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		53F1E2661E5CDA8900C13280 /* Whisker Wars */ = {
+			isa = PBXGroup;
+			children = (
+				532508C01EB7C3660043B779 /* battleOfCatmixia.swift */,
+				53F1E2711E5CDA8900C13280 /* Main.storyboard */,
+				530DAC6C1ED3DF1000E05433 /* map1VC.swift */,
+				53F9535C2051D66100B169BA /* introVC.swift */,
+				53B782C7201E982D002D5AD4 /* NewHomeScreen.swift */,
+				532508C11EB7C3660043B779 /* GameOverScene.swift */,
+				532508C21EB7C3660043B779 /* gameWonScene.swift */,
+				532508C31EB7C3660043B779 /* tapToBegin.swift */,
+				53F1E2741E5CDA8A00C13280 /* Assets.xcassets */,
+				53F1E2671E5CDA8900C13280 /* AppDelegate.swift */,
+				53F1E2761E5CDA8A00C13280 /* LaunchScreen.storyboard */,
+				53F1E2791E5CDA8A00C13280 /* Info.plist */,
+				53F1E2691E5CDA8900C13280 /* GameScene.sks */,
+				53F1E26B1E5CDA8900C13280 /* Actions.sks */,
+				532508D71EB7CA7D0043B779 /* Whisker_Wars.xcdatamodeld */,
+				53F1E2651E5CDA8900C13280 /* Products */,
+			);
+			path = "Whisker Wars";
+			sourceTree = "<group>";
+		};
+		D93C7345AD1DC6B9CC7F17D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53EF6A1D1EF1AD3500A08F92 /* StoreKit.framework */,
+				FE8418F0BD31583E8823248A /* Pods_Whisker_Wars.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53F1E2631E5CDA8900C13280 /* Whisker Wars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53F1E27C1E5CDA8A00C13280 /* Build configuration list for PBXNativeTarget "Whisker Wars" */;
+			buildPhases = (
+				BE1B695E4649C4D09488A1F2 /* [CP] Check Pods Manifest.lock */,
+				53F1E2601E5CDA8900C13280 /* Sources */,
+				53F1E2611E5CDA8900C13280 /* Frameworks */,
+				53F1E2621E5CDA8900C13280 /* Resources */,
+				FD612A9AE001CD3CF894A864 /* [CP] Embed Pods Frameworks */,
+				FE7BD8224D3E58A07574BABB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Whisker Wars";
+			productName = "Whisker Wars";
+			productReference = 53F1E2641E5CDA8900C13280 /* Whisker Wars.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53F1E25C1E5CDA8900C13280 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = co.slushbox;
+				TargetAttributes = {
+					53F1E2631E5CDA8900C13280 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EHF7Z93MX7;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 53F1E25F1E5CDA8900C13280 /* Build configuration list for PBXProject "Whisker Wars" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53F1E25B1E5CDA8900C13280;
+			productRefGroup = 53F1E2651E5CDA8900C13280 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53F1E2631E5CDA8900C13280 /* Whisker Wars */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53F1E2621E5CDA8900C13280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53B782C9201E9E60002D5AD4 /* Meloody-2.m4a in Resources */,
+				539BB1FD202F8E1F00820E20 /* fishShipH1.png in Resources */,
+				53F1E2C61E6E21D500C13280 /* meowbot2.png in Resources */,
+				5334035C1EA46D3300A2F2D6 /* level2Cover.png in Resources */,
+				53A5AC7120217A6E00C21B5A /* privateLickens.png in Resources */,
+				53F1E2EF1E7B151700C13280 /* whiskerWarIconNoBack.png in Resources */,
+				53CC1206202E7EFB0017ECD1 /* WWFINAL.png in Resources */,
+				533403681EA946BE00A2F2D6 /* meteor.png in Resources */,
+				5334B17F2027F90800E56A50 /* hitOnceBackground.png in Resources */,
+				5375BB951E847CCF0058D376 /* home@1x.png in Resources */,
+				53F1E2C81E6E21E600C13280 /* background.png in Resources */,
+				533403641EA6CEC000A2F2D6 /* bulletWave.png in Resources */,
+				539BB1FC202F8E1F00820E20 /* fishShip.png in Resources */,
+				53F1E2731E5CDA8900C13280 /* Main.storyboard in Resources */,
+				53F1E26A1E5CDA8900C13280 /* GameScene.sks in Resources */,
+				53F1E2751E5CDA8A00C13280 /* Assets.xcassets in Resources */,
+				5375BB941E847CCF0058D376 /* home@2x.png in Resources */,
+				53C88BAF2022AB350057D81D /* commanderKitty.png in Resources */,
+				53F1E2C51E6E21D500C13280 /* meowbot.png in Resources */,
+				532E677C202EAFAF0011A16C /* coinSound.mp3 in Resources */,
+				53F1E2C01E6E21C200C13280 /* pushaKitty.png in Resources */,
+				5375BB931E847CCF0058D376 /* setting@1x.png in Resources */,
+				53CC1205202E7EFB0017ECD1 /* WWHitTwice.png in Resources */,
+				53A5AC7020217A6E00C21B5A /* privateLickensHidden.png in Resources */,
+				5375BB921E847CCF0058D376 /* setting@2x.png in Resources */,
+				53B782CF201EF7E2002D5AD4 /* upgradeCat.png in Resources */,
+				5334036D1EA9DBAE00A2F2D6 /* pressThumb.png in Resources */,
+				5334B17D2027F90400E56A50 /* hitTwiceBackground.png in Resources */,
+				53F1E2E71E7B149D00C13280 /* play-circle-fill-128.png in Resources */,
+				53F1E2D01E6F549200C13280 /* Cat-meow-10.mp3 in Resources */,
+				53F1E2DF1E761EBB00C13280 /* House-Paint-Slab.ttf in Resources */,
+				53CC1204202E7EFB0017ECD1 /* WWHitOnce.png in Resources */,
+				53F1E2781E5CDA8A00C13280 /* LaunchScreen.storyboard in Resources */,
+				53F1E2DC1E733FA100C13280 /* themeSound.mp3 in Resources */,
+				539BB1FE202F8E1F00820E20 /* fishShipH3.png in Resources */,
+				5334B17B2027F57800E56A50 /* background4.png in Resources */,
+				5375BB901E847CCF0058D376 /* cancel@1x.png in Resources */,
+				53F1E2DA1E733E7000C13280 /* explosion_03.wav in Resources */,
+				53A2D36C1E9D7346000A8A21 /* Break Out - Lower Volume.mp3 in Resources */,
+				53C88BB12022B0120057D81D /* majorMittens.png in Resources */,
+				53F1E2ED1E7B14AF00C13280 /* cog-settings-alt-128.png in Resources */,
+				53CC1200202E7AB90017ECD1 /* if_home_126572.png in Resources */,
+				533403701EAA85BB00A2F2D6 /* iPhoneDrawing.png in Resources */,
+				53B782CD201EC610002D5AD4 /* socialShare.png in Resources */,
+				53F1E26C1E5CDA8900C13280 /* Actions.sks in Resources */,
+				5375BB911E847CCF0058D376 /* cancel@2x.png in Resources */,
+				5334035E1EA46D4D00A2F2D6 /* level3Cover.png in Resources */,
+				533403621EA5311A00A2F2D6 /* leftArm.png in Resources */,
+				533403611EA5311A00A2F2D6 /* privateWhiskers.png in Resources */,
+				5334036E1EA9DBAF00A2F2D6 /* dragThumb.png in Resources */,
+				53F1E2D61E73365300C13280 /* explosionWhiskerWars.png in Resources */,
+				53F95360205250E100B169BA /* My Movie 7.gif in Resources */,
+				53F1E2D91E733E7000C13280 /* explosion_01.wav in Resources */,
+				53C88BAD2022A5BC0057D81D /* sergantPursington.png in Resources */,
+				5334036A1EA9C2FF00A2F2D6 /* superMeteor.png in Resources */,
+				53F1E2D21E6F5D9D00C13280 /* hairBall.png in Resources */,
+				539BB1FB202F8E1F00820E20 /* fishShipH2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BE1B695E4649C4D09488A1F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD612A9AE001CD3CF894A864 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whisker Wars/Pods-Whisker Wars-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE7BD8224D3E58A07574BABB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whisker Wars/Pods-Whisker Wars-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53F1E2601E5CDA8900C13280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532508C71EB7C3660043B779 /* tapToBegin.swift in Sources */,
+				53F9535D2051D66100B169BA /* introVC.swift in Sources */,
+				532508D91EB7CA7D0043B779 /* Whisker_Wars.xcdatamodeld in Sources */,
+				530DAC6D1ED3DF1000E05433 /* map1VC.swift in Sources */,
+				532508C51EB7C3660043B779 /* GameOverScene.swift in Sources */,
+				532508C61EB7C3660043B779 /* gameWonScene.swift in Sources */,
+				532508C41EB7C3660043B779 /* battleOfCatmixia.swift in Sources */,
+				53B782C8201E982D002D5AD4 /* NewHomeScreen.swift in Sources */,
+				53F1E2681E5CDA8900C13280 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		53F1E2711E5CDA8900C13280 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53F1E2721E5CDA8900C13280 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		53F1E2761E5CDA8A00C13280 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53F1E2771E5CDA8A00C13280 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53F1E27A1E5CDA8A00C13280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		53F1E27B1E5CDA8A00C13280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53F1E27D1E5CDA8A00C13280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 618975CEDBA9F31355B343AD /* Pods-Whisker Wars.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EHF7Z93MX7;
+				INFOPLIST_FILE = "Whisker Wars/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "slushbox.Whisker-Wars";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		53F1E27E1E5CDA8A00C13280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46BD8177935A705B439CED4E /* Pods-Whisker Wars.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EHF7Z93MX7;
+				INFOPLIST_FILE = "Whisker Wars/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "slushbox.Whisker-Wars";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53F1E25F1E5CDA8900C13280 /* Build configuration list for PBXProject "Whisker Wars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F1E27A1E5CDA8A00C13280 /* Debug */,
+				53F1E27B1E5CDA8A00C13280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53F1E27C1E5CDA8A00C13280 /* Build configuration list for PBXNativeTarget "Whisker Wars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F1E27D1E5CDA8A00C13280 /* Debug */,
+				53F1E27E1E5CDA8A00C13280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		532508D71EB7CA7D0043B779 /* Whisker_Wars.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				532508D81EB7CA7D0043B779 /* Whisker_Wars.xcdatamodel */,
+			);
+			currentVersion = 532508D81EB7CA7D0043B779 /* Whisker_Wars.xcdatamodel */;
+			name = Whisker_Wars.xcdatamodeld;
+			path = ../Whisker_Wars.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 53F1E25C1E5CDA8900C13280 /* Project object */;
+}
