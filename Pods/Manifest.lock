@@ -1,0 +1,12 @@
+PODS:
+  - SwiftyStoreKit (0.6.1)
+
+DEPENDENCIES:
+  - SwiftyStoreKit
+
+SPEC CHECKSUMS:
+  SwiftyStoreKit: 956408606f43ec3df3386b56e65615bb19bee85e
+
+PODFILE CHECKSUM: d83adbaa2ed2482cdf51bb287b284754598c65cb
+
+COCOAPODS: 1.2.1

@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10191134AE04141A3F11E44D1C93DC82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2C304A71E9F55FBDCE307B210C277582 /* InAppProductPurchaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446385BC49598DD2FCA35A0CB6308776 /* InAppProductPurchaseRequest.swift */; };
+		310A664626C611C6E8E6DF14E60C377E /* SwiftyStoreKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AAB30BF9C17E6B8E050DCB6C138B46B /* SwiftyStoreKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47F42756A4FBD5D4FC79EA23D4BDEB20 /* InAppReceiptRefreshRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FF7F71271739575C380BF580581EA1 /* InAppReceiptRefreshRequest.swift */; };
+		52446757F6E2501BE24CC448ED5707FC /* SKProduct+LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C6A8E570F7C7D8E397BA5A1B58FC17 /* SKProduct+LocalizedPrice.swift */; };
+		53BB913E92C81726C5F65DEFB06E91F3 /* SwiftyStoreKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FD138BE51A3452457A845842370D3E /* SwiftyStoreKit-dummy.m */; };
+		59E77BAAAB0559A3DDAAB5624578B94F /* SwiftyStoreKit+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDC9BA57A86365D938AC55CFFC4A8E /* SwiftyStoreKit+Types.swift */; };
+		627E86F71D779AE3A5724266EBD9E1E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		638CCDF5825660DF38A45B76722E1491 /* InAppReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBAFBF20C0C081D44E8BE8E1BBB2F63 /* InAppReceipt.swift */; };
+		7FEF8CDBC77042D738E960F4EA120553 /* Pods-Whisker Wars-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8DE95F88BACC9219F4CC615E3D175B /* Pods-Whisker Wars-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97A23625A33A551C5BC44DB55B1A3284 /* InAppCompleteTransactionsObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73E4D4D48EBFFFF07AC37CD6218CCEE /* InAppCompleteTransactionsObserver.swift */; };
+		A470ADE1B2EB90F8236790355F332A1E /* Pods-Whisker Wars-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F612C65E39469D2355B8FE3B55648F /* Pods-Whisker Wars-dummy.m */; };
+		A4AF0190A7F686302F8ECA5AF4B4420D /* OS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF1ABE43E7914BE6B06E82ABA2AB2A4 /* OS.swift */; };
+		C660B86EF70614B1CFEF48823BBE9C71 /* InAppProductQueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E621B5D7B9C1625539E87566252ACB /* InAppProductQueryRequest.swift */; };
+		D19F02C5CF1C70E0E0017C8076235A4C /* SwiftyStoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843036EEA3390FC8D8929A144C177981 /* SwiftyStoreKit.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74F3F111B1F673AECB0534030127ABC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E91C51E81A24E24DA08AE05D623138D5;
+			remoteInfo = SwiftyStoreKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EAC2EE39CF0F5444D7AB2524F18D3C7 /* Pods_Whisker_Wars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Whisker_Wars.framework; path = "Pods-Whisker Wars.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15C6A8E570F7C7D8E397BA5A1B58FC17 /* SKProduct+LocalizedPrice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SKProduct+LocalizedPrice.swift"; path = "SwiftyStoreKit/SKProduct+LocalizedPrice.swift"; sourceTree = "<group>"; };
+		25884144F11E6D713694693B3560607C /* Pods-Whisker Wars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Whisker Wars.debug.xcconfig"; sourceTree = "<group>"; };
+		277B52EEE70BD295B1C5E56D97EF7EC3 /* SwiftyStoreKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyStoreKit-prefix.pch"; sourceTree = "<group>"; };
+		358659216C9DDD5B55818AF46C6BBEA2 /* Pods-Whisker Wars-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Whisker Wars-frameworks.sh"; sourceTree = "<group>"; };
+		3AAB30BF9C17E6B8E050DCB6C138B46B /* SwiftyStoreKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyStoreKit-umbrella.h"; sourceTree = "<group>"; };
+		3D791ED6B9B818D3188B2B29C2369F54 /* SwiftyStoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyStoreKit.framework; path = SwiftyStoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		446385BC49598DD2FCA35A0CB6308776 /* InAppProductPurchaseRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppProductPurchaseRequest.swift; path = SwiftyStoreKit/InAppProductPurchaseRequest.swift; sourceTree = "<group>"; };
+		4CBAFBF20C0C081D44E8BE8E1BBB2F63 /* InAppReceipt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppReceipt.swift; path = SwiftyStoreKit/InAppReceipt.swift; sourceTree = "<group>"; };
+		4EB99DA6BDDBF904E6E5C9C222CD355D /* Pods-Whisker Wars-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Whisker Wars-acknowledgements.plist"; sourceTree = "<group>"; };
+		52E621B5D7B9C1625539E87566252ACB /* InAppProductQueryRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppProductQueryRequest.swift; path = SwiftyStoreKit/InAppProductQueryRequest.swift; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		71E9123D09AD3629B7F6531F09350C33 /* Pods-Whisker Wars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Whisker Wars.release.xcconfig"; sourceTree = "<group>"; };
+		72FF7F71271739575C380BF580581EA1 /* InAppReceiptRefreshRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppReceiptRefreshRequest.swift; path = SwiftyStoreKit/InAppReceiptRefreshRequest.swift; sourceTree = "<group>"; };
+		78388658B85F1F59C4F6A7AD87871A9F /* SwiftyStoreKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyStoreKit.modulemap; sourceTree = "<group>"; };
+		7BC04091A1ECEFAF8D22E71D6A1C128F /* SwiftyStoreKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyStoreKit.xcconfig; sourceTree = "<group>"; };
+		81FDC301BE0CFD5B7EBCA4DEA5955307 /* Pods-Whisker Wars-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Whisker Wars-acknowledgements.markdown"; sourceTree = "<group>"; };
+		843036EEA3390FC8D8929A144C177981 /* SwiftyStoreKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyStoreKit.swift; path = SwiftyStoreKit/SwiftyStoreKit.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94FD138BE51A3452457A845842370D3E /* SwiftyStoreKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyStoreKit-dummy.m"; sourceTree = "<group>"; };
+		9DF1ABE43E7914BE6B06E82ABA2AB2A4 /* OS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OS.swift; path = SwiftyStoreKit/OS.swift; sourceTree = "<group>"; };
+		9FF8FABE10F1664988DB847D2945D9EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F1C530D0EE1A118F667948A62B03C5 /* Pods-Whisker Wars.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Whisker Wars.modulemap"; sourceTree = "<group>"; };
+		C625DCEA53804C3A3312C1B3AF15FE49 /* Pods-Whisker Wars-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Whisker Wars-resources.sh"; sourceTree = "<group>"; };
+		D73E4D4D48EBFFFF07AC37CD6218CCEE /* InAppCompleteTransactionsObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppCompleteTransactionsObserver.swift; path = SwiftyStoreKit/InAppCompleteTransactionsObserver.swift; sourceTree = "<group>"; };
+		DC8DE95F88BACC9219F4CC615E3D175B /* Pods-Whisker Wars-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Whisker Wars-umbrella.h"; sourceTree = "<group>"; };
+		E3F612C65E39469D2355B8FE3B55648F /* Pods-Whisker Wars-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Whisker Wars-dummy.m"; sourceTree = "<group>"; };
+		E4F3345A56EB4302C4DD5E0D1D53F7DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFDDC9BA57A86365D938AC55CFFC4A8E /* SwiftyStoreKit+Types.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyStoreKit+Types.swift"; path = "SwiftyStoreKit/SwiftyStoreKit+Types.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		362B85A5ED66EC7B89BC83C6E35FE6D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10191134AE04141A3F11E44D1C93DC82 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C47F74919A000B8693DDAF1CEEC16D43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627E86F71D779AE3A5724266EBD9E1E3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D41F9CCF684F666F6D9F5D24F7275DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF83CEE943AD08CB1F504E26F4D5B49E /* SwiftyStoreKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		759F63DEB55DFECCC2B8CE9C305ED05C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FF8FABE10F1664988DB847D2945D9EA /* Info.plist */,
+				78388658B85F1F59C4F6A7AD87871A9F /* SwiftyStoreKit.modulemap */,
+				7BC04091A1ECEFAF8D22E71D6A1C128F /* SwiftyStoreKit.xcconfig */,
+				94FD138BE51A3452457A845842370D3E /* SwiftyStoreKit-dummy.m */,
+				277B52EEE70BD295B1C5E56D97EF7EC3 /* SwiftyStoreKit-prefix.pch */,
+				3AAB30BF9C17E6B8E050DCB6C138B46B /* SwiftyStoreKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyStoreKit";
+			sourceTree = "<group>";
+		};
+		766AE01B8E3F9BC5DECDB26088176684 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				803D6C97733535C39C6E1F0DA56727A9 /* Pods-Whisker Wars */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6D41F9CCF684F666F6D9F5D24F7275DF /* Pods */,
+				B94C9DF4B18D6D238976BA39C2C5EBA9 /* Products */,
+				766AE01B8E3F9BC5DECDB26088176684 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		803D6C97733535C39C6E1F0DA56727A9 /* Pods-Whisker Wars */ = {
+			isa = PBXGroup;
+			children = (
+				E4F3345A56EB4302C4DD5E0D1D53F7DE /* Info.plist */,
+				B7F1C530D0EE1A118F667948A62B03C5 /* Pods-Whisker Wars.modulemap */,
+				81FDC301BE0CFD5B7EBCA4DEA5955307 /* Pods-Whisker Wars-acknowledgements.markdown */,
+				4EB99DA6BDDBF904E6E5C9C222CD355D /* Pods-Whisker Wars-acknowledgements.plist */,
+				E3F612C65E39469D2355B8FE3B55648F /* Pods-Whisker Wars-dummy.m */,
+				358659216C9DDD5B55818AF46C6BBEA2 /* Pods-Whisker Wars-frameworks.sh */,
+				C625DCEA53804C3A3312C1B3AF15FE49 /* Pods-Whisker Wars-resources.sh */,
+				DC8DE95F88BACC9219F4CC615E3D175B /* Pods-Whisker Wars-umbrella.h */,
+				25884144F11E6D713694693B3560607C /* Pods-Whisker Wars.debug.xcconfig */,
+				71E9123D09AD3629B7F6531F09350C33 /* Pods-Whisker Wars.release.xcconfig */,
+			);
+			name = "Pods-Whisker Wars";
+			path = "Target Support Files/Pods-Whisker Wars";
+			sourceTree = "<group>";
+		};
+		AF83CEE943AD08CB1F504E26F4D5B49E /* SwiftyStoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				D73E4D4D48EBFFFF07AC37CD6218CCEE /* InAppCompleteTransactionsObserver.swift */,
+				446385BC49598DD2FCA35A0CB6308776 /* InAppProductPurchaseRequest.swift */,
+				52E621B5D7B9C1625539E87566252ACB /* InAppProductQueryRequest.swift */,
+				4CBAFBF20C0C081D44E8BE8E1BBB2F63 /* InAppReceipt.swift */,
+				72FF7F71271739575C380BF580581EA1 /* InAppReceiptRefreshRequest.swift */,
+				9DF1ABE43E7914BE6B06E82ABA2AB2A4 /* OS.swift */,
+				15C6A8E570F7C7D8E397BA5A1B58FC17 /* SKProduct+LocalizedPrice.swift */,
+				843036EEA3390FC8D8929A144C177981 /* SwiftyStoreKit.swift */,
+				FFDDC9BA57A86365D938AC55CFFC4A8E /* SwiftyStoreKit+Types.swift */,
+				759F63DEB55DFECCC2B8CE9C305ED05C /* Support Files */,
+			);
+			name = SwiftyStoreKit;
+			path = SwiftyStoreKit;
+			sourceTree = "<group>";
+		};
+		B94C9DF4B18D6D238976BA39C2C5EBA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0EAC2EE39CF0F5444D7AB2524F18D3C7 /* Pods_Whisker_Wars.framework */,
+				3D791ED6B9B818D3188B2B29C2369F54 /* SwiftyStoreKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		158C8E4D5E311EC3CA6C7A7EAF48F2E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310A664626C611C6E8E6DF14E60C377E /* SwiftyStoreKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E46C34B2B59447272824047214AA9DE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FEF8CDBC77042D738E960F4EA120553 /* Pods-Whisker Wars-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		19A97CB96E30BB26CBFA2A56EF89CB24 /* Pods-Whisker Wars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA3A6016743D0D67B5BDC7C36CF7DBD4 /* Build configuration list for PBXNativeTarget "Pods-Whisker Wars" */;
+			buildPhases = (
+				309EF99EF31442876445F403848C7951 /* Sources */,
+				362B85A5ED66EC7B89BC83C6E35FE6D5 /* Frameworks */,
+				4E46C34B2B59447272824047214AA9DE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79716FC52BFFABBFB128581AD9856606 /* PBXTargetDependency */,
+			);
+			name = "Pods-Whisker Wars";
+			productName = "Pods-Whisker Wars";
+			productReference = 0EAC2EE39CF0F5444D7AB2524F18D3C7 /* Pods_Whisker_Wars.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E91C51E81A24E24DA08AE05D623138D5 /* SwiftyStoreKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C303481E4F429AD595532ED8103725F /* Build configuration list for PBXNativeTarget "SwiftyStoreKit" */;
+			buildPhases = (
+				A17D31F1EE6F5BDA1EEB23D5B51F0338 /* Sources */,
+				C47F74919A000B8693DDAF1CEEC16D43 /* Frameworks */,
+				158C8E4D5E311EC3CA6C7A7EAF48F2E3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyStoreKit;
+			productName = SwiftyStoreKit;
+			productReference = 3D791ED6B9B818D3188B2B29C2369F54 /* SwiftyStoreKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B94C9DF4B18D6D238976BA39C2C5EBA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19A97CB96E30BB26CBFA2A56EF89CB24 /* Pods-Whisker Wars */,
+				E91C51E81A24E24DA08AE05D623138D5 /* SwiftyStoreKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		309EF99EF31442876445F403848C7951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A470ADE1B2EB90F8236790355F332A1E /* Pods-Whisker Wars-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A17D31F1EE6F5BDA1EEB23D5B51F0338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A23625A33A551C5BC44DB55B1A3284 /* InAppCompleteTransactionsObserver.swift in Sources */,
+				2C304A71E9F55FBDCE307B210C277582 /* InAppProductPurchaseRequest.swift in Sources */,
+				C660B86EF70614B1CFEF48823BBE9C71 /* InAppProductQueryRequest.swift in Sources */,
+				638CCDF5825660DF38A45B76722E1491 /* InAppReceipt.swift in Sources */,
+				47F42756A4FBD5D4FC79EA23D4BDEB20 /* InAppReceiptRefreshRequest.swift in Sources */,
+				A4AF0190A7F686302F8ECA5AF4B4420D /* OS.swift in Sources */,
+				52446757F6E2501BE24CC448ED5707FC /* SKProduct+LocalizedPrice.swift in Sources */,
+				59E77BAAAB0559A3DDAAB5624578B94F /* SwiftyStoreKit+Types.swift in Sources */,
+				53BB913E92C81726C5F65DEFB06E91F3 /* SwiftyStoreKit-dummy.m in Sources */,
+				D19F02C5CF1C70E0E0017C8076235A4C /* SwiftyStoreKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79716FC52BFFABBFB128581AD9856606 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyStoreKit;
+			target = E91C51E81A24E24DA08AE05D623138D5 /* SwiftyStoreKit */;
+			targetProxy = 74F3F111B1F673AECB0534030127ABC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3D91C4959B1C726B2D331FC3E538F551 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BC04091A1ECEFAF8D22E71D6A1C128F /* SwiftyStoreKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyStoreKit/SwiftyStoreKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyStoreKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyStoreKit/SwiftyStoreKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyStoreKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3FE6D678618A8C2610FC5A7DEC8B5779 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71E9123D09AD3629B7F6531F09350C33 /* Pods-Whisker Wars.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Whisker Wars/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Whisker Wars/Pods-Whisker Wars.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Whisker_Wars;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		643C76AA582046977B7877822ED7A258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		ADEE7A586EDE3F9FDFBD738AC4DFEA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BC04091A1ECEFAF8D22E71D6A1C128F /* SwiftyStoreKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyStoreKit/SwiftyStoreKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyStoreKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyStoreKit/SwiftyStoreKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyStoreKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C03B8870130C98D1B02B59D003687524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA21044682BA7A9A341A61DC8A76839E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25884144F11E6D713694693B3560607C /* Pods-Whisker Wars.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Whisker Wars/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Whisker Wars/Pods-Whisker Wars.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Whisker_Wars;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643C76AA582046977B7877822ED7A258 /* Debug */,
+				C03B8870130C98D1B02B59D003687524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C303481E4F429AD595532ED8103725F /* Build configuration list for PBXNativeTarget "SwiftyStoreKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADEE7A586EDE3F9FDFBD738AC4DFEA90 /* Debug */,
+				3D91C4959B1C726B2D331FC3E538F551 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA3A6016743D0D67B5BDC7C36CF7DBD4 /* Build configuration list for PBXNativeTarget "Pods-Whisker Wars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA21044682BA7A9A341A61DC8A76839E /* Debug */,
+				3FE6D678618A8C2610FC5A7DEC8B5779 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
