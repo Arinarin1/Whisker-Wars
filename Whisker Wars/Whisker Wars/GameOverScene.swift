@@ -17,13 +17,8 @@ class GameOverScene: SKScene {
     let homeLevel = SKLabelNode(fontNamed: "House-Paint-Slab")
     
     
-   
-    
     override func didMove(to view: SKView) {
-        
-     
        
-        
         let background = SKSpriteNode(imageNamed: "WWHitTwice.png")
         
         background.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
@@ -37,7 +32,7 @@ class GameOverScene: SKScene {
         gameOverLabel.fontColor = SKColor.white
         gameOverLabel.position = CGPoint(x: self.size.width * 0.5, y: self.size.height * 0.8)
         gameOverLabel.zPosition = 1
-        self.addChild(gameOverLabel)
+       // self.addChild(gameOverLabel)
         
         let gameOverLabel2 = SKLabelNode(fontNamed: "House-Paint-Slab")
         gameOverLabel2.text = "was Captured"
@@ -45,15 +40,15 @@ class GameOverScene: SKScene {
         gameOverLabel2.fontColor = SKColor.white
         gameOverLabel2.position = CGPoint(x: self.size.width * 0.5, y: self.size.height * 0.73)
         gameOverLabel2.zPosition = 1
-        self.addChild(gameOverLabel2)
+        //self.addChild(gameOverLabel2)
 
         
         
         let scoreLabel = SKLabelNode(fontNamed: "House-Paint-Slab")
-        scoreLabel.text = "Score: \(gameScore)"
-        scoreLabel.fontSize = 110
+        scoreLabel.text = "\(gameScore)"
+        scoreLabel.fontSize = 180
         scoreLabel.fontColor = SKColor.white
-        scoreLabel.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.55)
+        scoreLabel.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.75)
         scoreLabel.zPosition = 1
         self.addChild(scoreLabel)
         
@@ -68,35 +63,33 @@ class GameOverScene: SKScene {
             
         }
         
-        
-        
         numOfCoins += coinsFromGame
         defaults.set(numOfCoins, forKey: "numOfCoins")
         
         
         let coinLabel = SKLabelNode(fontNamed: "House-Paint-Slab")
         coinLabel.text = "Total Coins: \(defaults.integer(forKey: "numOfCoins"))"
-        coinLabel.fontSize = 80
+        coinLabel.fontSize = 100
         coinLabel.fontColor = SKColor.yellow
         coinLabel.zPosition = 1
-        coinLabel.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.359)
+        coinLabel.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.459)
         self.addChild(coinLabel)
         
        
         let highScoreLabel = SKLabelNode(fontNamed: "House-Paint-Slab")
-        highScoreLabel.text = "High Score: \(highScoreNumber)"
-        highScoreLabel.fontSize = 95
-        highScoreLabel.fontColor = SKColor.yellow
+        highScoreLabel.text = "High Score \(highScoreNumber)"
+        highScoreLabel.fontSize = 112
+        highScoreLabel.fontColor = SKColor.white
         highScoreLabel.zPosition = 1
-        highScoreLabel.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.45)
+        highScoreLabel.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.55)
         self.addChild(highScoreLabel)
         
        
         restartLabel.text = "Restart"
-        restartLabel.fontSize = 90
+        restartLabel.fontSize = 80
         restartLabel.fontColor = SKColor.white
         restartLabel.zPosition = 1
-        restartLabel.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.2)
+        restartLabel.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.26)
         self.addChild(restartLabel)
         
     }

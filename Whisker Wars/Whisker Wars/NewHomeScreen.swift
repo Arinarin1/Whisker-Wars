@@ -13,6 +13,8 @@ import SpriteKit
 import GameplayKit
 import AVFoundation
 import CoreData
+import StoreKit
+import SwiftyStoreKit
 
 
 class NewHomeScreen: UIViewController {
@@ -22,6 +24,7 @@ class NewHomeScreen: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     var audioPlayer = AVAudioPlayer()
+    let defaults = UserDefaults()
     
     @IBOutlet weak var playBtn: UIButton!
     @IBOutlet weak var upgradeBtn: UIButton!
@@ -32,8 +35,25 @@ class NewHomeScreen: UIViewController {
     @IBOutlet weak var privateWhiskers: UIImageView!
     
     override func viewDidLoad() {
-       
         
+        //  defaults.set("Music", forKey: "Music")
+       
+        SwiftyStoreKit.completeTransactions(atomically: true) { products in
+            
+            for product in products {
+                
+                if product.transaction.transactionState == .purchased || product.transaction.transactionState == .restored {
+                    
+                    if product.needsFinishTransaction {
+                        // Deliver content from server, then:
+                        SwiftyStoreKit.finishTransaction(product.transaction)
+                    }
+                    print("purchased: \(product)")
+                }
+            }
+        }
+       
+            
         // Audio player
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Meloody-2", ofType: "m4a")!))
@@ -42,15 +62,28 @@ class NewHomeScreen: UIViewController {
             print(error)
         }
         
-        if audioPlayer.isPlaying == true {
+        if audioPlayer.isPlaying == true && defaults.string(forKey: "Music") == "NoMusic" {
             
             audioPlayer.stop()
             
+        } else if audioPlayer.isPlaying == false && defaults.string(forKey: "Music") == "Music"  {
+            
+            audioPlayer.play()
+            
+        } else if audioPlayer.isPlaying == false && defaults.string(forKey: "Music") == "NoMusic" {
+            
+                 audioPlayer.stop()
+        
         } else if audioPlayer.isPlaying == false {
             
             audioPlayer.play()
         }
         
+        
+       // if defaults.string(forKey: "Music") == "MusicOff" {
+            
+         //    audioPlayer.stop()
+     //   }
         
         // Play buttin animation
         UIView.animate(withDuration: 1, animations: {
@@ -90,12 +123,12 @@ class NewHomeScreen: UIViewController {
         
         // meowbot 1 animation
         UIView.animate(withDuration: 1.0, delay: 8, animations: {
-            self.privateWhiskers.frame.origin.y += 50
+            self.privateWhiskers.frame.origin.y += 60
         
         })
         
         
-        let defaults = UserDefaults()
+        
         var highScoreNumber = defaults.integer(forKey: "highScoreSaved")
         scoreLbl.text = "\(highScoreNumber)"
         
@@ -103,33 +136,59 @@ class NewHomeScreen: UIViewController {
         numberOfCoins.text = "\(numOfCoins)"
         
         
+      
     }
+    
+    
     
     @IBAction func playAction(_ sender: Any) {
         
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "map1") as! map1VC
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "playerPicker") as! playerPickerVC
         self.present(nextViewController, animated:true, completion:nil)
         
-        audioPlayer.stop()
-        print("Success! Starting map.")
+      //  var numOfCoins = defaults.integer(forKey: "numOfCoins")
+      //  defaults.set(numOfCoins + 200, forKey: "numOfCoins")
+        
+       audioPlayer.stop()
+       audioPlayer.volume = 0
+        
+       if defaults.string(forKey: "Music") == "NoMusic" {
+            
+            audioPlayer.stop()
+        audioPlayer.volume = 0
         
         
+        
+        }
+        
+        print("Success! Launching Player Picker")
+       
+       
         
     }
     
     @IBAction func upgradeBtnPressed(_ sender: Any) {
         
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "achieve") as! achievementsVC
+        self.present(nextViewController, animated:true, completion:nil)
         audioPlayer.stop()
+        
     }
     @IBAction func shareBtnPressed(_ sender: Any) {
         
-        audioPlayer.stop()
+      //  audioPlayer.stop()
         
     }
     @IBAction func settingsBtnPressed(_ sender: Any) {
         
-       audioPlayer.stop()
+     
+         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "settings") as! settingsVC
+        self.present(nextViewController, animated:true, completion:nil)
+        audioPlayer.stop()
+        
     }
     
     

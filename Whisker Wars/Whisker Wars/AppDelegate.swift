@@ -14,18 +14,15 @@ import ImageIO
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    //func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-      // let defaults = UserDefaults.standard
+        // Initialize the Chartboost library
+        Chartboost.start(withAppId: "5ac06578f7c1590bbdfdf5d1", appSignature: "f57aed811e696e414e94b009afae7d594a96375e", delegate: nil)
+        Chartboost.showInterstitial(CBLocationMainMenu)
         
-       // if defaults.string(forKey: "SeenOrNot") == "Seen" {
+        return true
         
-          //  let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-          //  let nextViewController = storyBoard.instantiateViewController(withIdentifier: "VC") as! NewHomeScreen
-          //  self.removeFromParentViewController()
-          //  self.present(nextViewController, animated:true, completion:nil)
-            
-       // } else {
+        }
         
     
     var window: UIWindow?

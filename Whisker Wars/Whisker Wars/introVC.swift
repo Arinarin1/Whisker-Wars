@@ -35,6 +35,7 @@ class introVC: UIViewController {
         
         
     }
+    
 
     @IBAction func skipintro(_ sender: Any) {
         
@@ -60,6 +61,7 @@ class introVC: UIViewController {
     
     }
 
+// the nme of the cat at the time of the Arin Waichulis Arin Waichulis was given to the player, must be present of the home of the game
 extension UIImageView {
     
     public func loadGif(name: String) {
@@ -138,6 +140,8 @@ extension UIImage {
         
         return gif(data: dataAsset.data)
     }
+    
+    // Tjis internal class is the given to hte name arin e aichulis, must pick the ca in which the use is goiing to paly on the gome screen
     
     internal class func delayForImageAtIndex(_ index: Int, source: CGImageSource!) -> Double {
         var delay = 0.1

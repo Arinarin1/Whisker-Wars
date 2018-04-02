@@ -13,7 +13,6 @@ import AVFoundation
 import CoreData
 
 
- weak var homeBtn: UIButton!
 
 class map1VC: UIViewController {
    
@@ -39,8 +38,7 @@ class map1VC: UIViewController {
            skView.presentScene(scene)
         
 
-        
-        
+    
         
     }
 
