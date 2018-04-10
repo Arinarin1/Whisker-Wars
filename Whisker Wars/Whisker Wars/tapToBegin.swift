@@ -34,13 +34,13 @@ class tapToBegin: SKScene {
         background.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
         background.zPosition = 0
         self.addChild(background)
-
+        
         let drag = SKSpriteNode(imageNamed: "dragThumb.png")
         drag.setScale(1.5)
         drag.position = CGPoint(x: self.size.width / 2.40, y: self.size.height / 2)
         drag.zPosition = 1
         self.addChild(drag)
-
+        
         let press = SKSpriteNode(imageNamed: "pressThumb.png")
         press.setScale(1.5)
         press.position = CGPoint(x: self.size.width / 1.78, y: self.size.height / 2)
@@ -54,13 +54,12 @@ class tapToBegin: SKScene {
         self.addChild(iphone)
         
         
-        
         tapToBegin.text = "Tap to Begin"
         tapToBegin.name = "tap"
         tapToBegin.fontSize = 70
         tapToBegin.fontColor = SKColor.white
         tapToBegin.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.left
-        tapToBegin.position = CGPoint (x: self.size.width / 3, y: self.size.height / 2.5)
+        tapToBegin.position = CGPoint (x: self.size.width / 3.1, y: self.size.height / 2.5)
         tapToBegin.zPosition = 4
         
         var animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 0.88), SKAction.fadeOut(withDuration: 0.88)])

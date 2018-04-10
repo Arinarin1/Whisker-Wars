@@ -110,18 +110,18 @@ class powerupVC: UIViewController {
     @IBAction func powerup1(_ sender: Any) {
         
         // success user has enough coins and high score is met
-        if numOfCoins > 14 && highScoreNumber > 0 {
+        if numOfCoins > 14 && highScoreNumber > 49 {
             
             print("Success")
             qLbl1.text = "1/1"
             powerupBtn1.isHidden = true
             defaults.set("powerup1Purchased", forKey: "powerup1Purchased")
         
-            numberOfCoins.text! = "\(defaults.integer(forKey: "numOfCoins") - 20)"
-            defaults.set(numOfCoins - 20, forKey: "numOfCoins")
+            numberOfCoins.text! = "\(defaults.integer(forKey: "numOfCoins") - 15)"
+            defaults.set(numOfCoins - 15, forKey: "numOfCoins")
             
             // high score is met but not enough coins
-            } else if numOfCoins < 20 && highScoreNumber > 20 {
+            } else if numOfCoins < 15 && highScoreNumber > 49 {
             
             self.infoLbl1.text = "Not enough coins.."
             UIView.animate(withDuration: 0.2, animations: {
@@ -153,7 +153,7 @@ class powerupVC: UIViewController {
     @IBAction func powerup2(_ sender: Any) {
         
         // success user has enough coins and high score is met
-        if numOfCoins > 24 && highScoreNumber > 0 {
+        if numOfCoins > 24 && highScoreNumber > 74 {
             
             print("Success")
             qLbl2.text = "1/1"
@@ -164,7 +164,7 @@ class powerupVC: UIViewController {
             defaults.set(numOfCoins - 25, forKey: "numOfCoins")
             
             // high score is met but not enough coins
-        } else if numOfCoins < 25 && highScoreNumber > 39 {
+        } else if numOfCoins < 25 && highScoreNumber > 74 {
             
             self.infoLbl2.text = "Not enough coins.."
             UIView.animate(withDuration: 0.2, animations: {
@@ -197,7 +197,7 @@ class powerupVC: UIViewController {
     @IBAction func powerup3(_ sender: Any) {
         
         // success user has enough coins and high score is met
-        if numOfCoins > 29 && highScoreNumber > 0 {
+        if numOfCoins > 29 && highScoreNumber > 99 {
             
             print("Success")
             qLbl3.text = "1/1"
@@ -232,6 +232,7 @@ class powerupVC: UIViewController {
                     self.infoLbl3.transform = CGAffineTransform.identity
                     //self.powerupBtn1.backgroundColor = UIColor(red: 0/255, green: 235/255, blue: 151/255, alpha: 1)
                 })
+                
             })
             
         }
@@ -242,7 +243,7 @@ class powerupVC: UIViewController {
     @IBAction func powerup4(_ sender: Any) {
         
         // success user has enough coins and high score is met
-        if numOfCoins > 34 && highScoreNumber > 0 {
+        if numOfCoins > 34 && highScoreNumber > 149 {
             
             print("Success")
             qLbl4.text = "1/1"
@@ -253,7 +254,7 @@ class powerupVC: UIViewController {
             defaults.set(numOfCoins - 35, forKey: "numOfCoins")
             
             // high score is met but not enough coins
-        } else if numOfCoins < 35 && highScoreNumber > 199 {
+        } else if numOfCoins < 35 && highScoreNumber > 149 {
             
             self.infoLbl4.text = "Not enough coins.."
             UIView.animate(withDuration: 0.2, animations: {

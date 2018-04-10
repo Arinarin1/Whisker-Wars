@@ -88,6 +88,19 @@ class coinStoreVC: UIViewController {
         
         Chartboost.setDelegate(self)
         
+        
+         if defaults.string(forKey: "doubleCoins") == "double" {
+         
+            coinFeverBtn.setTitle("Active", for: .normal)
+            
+        }
+        
+        if defaults.string(forKey: "removeAds") == "removeAds" {
+            
+            removeAdsBtn.setTitle("Active", for: .normal)
+            
+        }
+        
         numberOfCoins.text = "\(numOfCoins)"
         purchase1Btn.layer.cornerRadius = 5
         purchase2Btn.layer.cornerRadius = 5
@@ -106,7 +119,6 @@ class coinStoreVC: UIViewController {
         view6.layer.cornerRadius = 5
         view7.layer.cornerRadius = 5
         view8.layer.cornerRadius = 5
-        
         
         
     }
@@ -520,21 +532,14 @@ extension coinStoreVC: ChartboostDelegate {
             
             if product.productId == "com.slushbox.WhiskerWars.DoubleCoins" {
                     self.defaults.set("double", forKey: "doubleCoins")
+                coinFeverBtn.setTitle("Active", for: .normal)
+                
                 print("You now will earn double coins")
             }
             
-            if product.productId == "com.slushbox.WhiskerWars.RemvoeAds" {
-                self.defaults.set("removeAds", forKey: "removeAds")
-                print("Ads Removed")
-            }
-            
-         //   defaults.set("purchased", forKey: "purchasedSomething")
-          //  adThanks.isHidden = false
-          //  print("Purchase success: \(product.productId)")
-            
             if product.productId == "com.slushbox.WhiskerWars.RemoveAds" {
-                
-                defaults.set("RemoveAds", forKey: "Ads")
+                 self.defaults.set("removeAds", forKey: "removeAds")
+                 removeAdsBtn.setTitle("Active", for: .normal)
                 print("***** Successfully Removed Ads *****")
             }
     
@@ -575,6 +580,8 @@ extension coinStoreVC: ChartboostDelegate {
             
             
             print("Restore Success: \(results.restoredPurchases)")
+              coinFeverBtn.setTitle("Active", for: .normal)
+              removeAdsBtn.setTitle("Active", for: .normal)
             return alertWithTitle(title: "Purchase Restored", message: "All purchases have been restored!")
             
             

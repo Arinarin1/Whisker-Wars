@@ -349,6 +349,7 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
             startNewDifficulty()
             startNewMeteorDifficulty()
             startNewSuperMeteorDifficulty()
+            startSetSlowMeteors()
            // startNewFishShipDifficulty()
             
             
@@ -364,6 +365,7 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
         
     }
     
+    // Maybe for the fish ships? Isnt set yet
     func add10ToScore() {
         
         
@@ -450,8 +452,16 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
         self.defaults.set("meteor", forKey: "meteor9")
         self.defaults.set("meteor", forKey: "meteor10")
         
+         if defaults.string(forKey: "removeAds") == "removeAds" {
+            
+         print("Ads removed")
+            
+         } else {
+        
         Chartboost.start(withAppId: "5ac06578f7c1590bbdfdf5d1", appSignature: "f57aed811e696e414e94b009afae7d594a96375e", delegate: nil)
         Chartboost.showInterstitial(CBLocationGameOver)
+            
+        }
         
         self.enumerateChildNodes(withName: "Bullet") {
             bullet, stop in
@@ -847,8 +857,6 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
 
         }
         
-        
-        
     }
     
     
@@ -1020,6 +1028,41 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
     }
     
     
+    func startSetSlowMeteors() {
+        
+        levelNumber += 1
+        
+        if self.action(forKey: "spawningSlowMeteors") != nil {
+            
+            self.removeAction(forKey: "spawningSlowMeteors")
+        }
+        
+        var levelDuration = TimeInterval()
+        
+        switch levelNumber {
+        case 1: levelDuration = 11
+        case 2: levelDuration = 11
+        case 3: levelDuration = 11
+        case 4: levelDuration = 11
+        case 5: levelDuration = 10
+        case 6: levelDuration = 9
+        case 7: levelDuration = 9
+        case 8: levelDuration = 8
+        case 9: levelDuration = 7
+        case 10: levelDuration = 6
+            
+        default:
+            levelDuration = 10
+            print("Cannot find level info")
+        }
+        
+        
+        let spawnMeteor = SKAction.run(spawnSetSlowMeteors)
+        let waitToSpawn = SKAction.wait(forDuration: levelDuration)
+        let spawnSequence = SKAction.sequence([waitToSpawn, spawnMeteor])
+        let spawnForever = SKAction.repeatForever(spawnSequence)
+        self.run(spawnForever, withKey: "spawningSlowMeteors")
+    }
     
     
     func startNewSuperMeteorDifficulty() {
@@ -1037,13 +1080,13 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
         case 1: levelDuration = 0.0
         case 2: levelDuration = 30.0
         case 3: levelDuration = 30.0
-        case 4: levelDuration = 30.0
-        case 5: levelDuration = 30.0
-        case 6: levelDuration = 40.0
-        case 7: levelDuration = 36.0
-        case 8: levelDuration = 38.0
-        case 9: levelDuration = 50.0
-        case 10: levelDuration = 40.0
+        case 4: levelDuration = 39.0
+        case 5: levelDuration = 49.0
+        case 6: levelDuration = 49.0
+        case 7: levelDuration = 69.0
+        case 8: levelDuration = 69.0
+        case 9: levelDuration = 69.0
+        case 10: levelDuration = 49.0
 
             
         default:
@@ -1177,7 +1220,8 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
         self.addChild(enemy)
         
          if defaults.string(forKey: "Startmeowbot") == "Startmeowbot" {
-        let moveEnemy = SKAction.move(to: endPoint, duration: 5.5)
+            
+        let moveEnemy = SKAction.move(to: endPoint, duration: 5.4)
         let deleteEnemy = SKAction.removeFromParent()
         let loseALifeAction = SKAction.run(loseALife)
         let enemySequence = SKAction.sequence([moveEnemy, deleteEnemy, loseALifeAction])
@@ -1190,7 +1234,7 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
         
         if defaults.string(forKey: "meowbot2") == "meowbot2" {
             print("Running MeowBot 2 spawn faster")
-            let moveEnemy = SKAction.move(to: endPoint, duration: 5.25)
+            let moveEnemy = SKAction.move(to: endPoint, duration: 5.2)
             let deleteEnemy = SKAction.removeFromParent()
             let loseALifeAction = SKAction.run(loseALife)
             let enemySequence = SKAction.sequence([moveEnemy, deleteEnemy, loseALifeAction])
@@ -1228,7 +1272,7 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
         }
         if defaults.string(forKey: "meowbot5") == "meowbot5" {
             
-            let moveEnemy = SKAction.move(to: endPoint, duration: 4.0)
+            let moveEnemy = SKAction.move(to: endPoint, duration: 3.9)
             let deleteEnemy = SKAction.removeFromParent()
             let loseALifeAction = SKAction.run(loseALife)
             let enemySequence = SKAction.sequence([moveEnemy, deleteEnemy, loseALifeAction])
@@ -1264,7 +1308,7 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
         }
         if defaults.string(forKey: "meowbot8") == "meowbot8" {
             
-            let moveEnemy = SKAction.move(to: endPoint, duration: 3.5)
+            let moveEnemy = SKAction.move(to: endPoint, duration: 3.6)
             let deleteEnemy = SKAction.removeFromParent()
             let loseALifeAction = SKAction.run(loseALife)
             let enemySequence = SKAction.sequence([moveEnemy, deleteEnemy, loseALifeAction])
@@ -1325,7 +1369,7 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
         enemy.physicsBody!.contactTestBitMask = PhysicsCategories.Player | PhysicsCategories.Bullet
         self.addChild(enemy)
         
-        let moveEnemy = SKAction.move(to: endPoint, duration: 2.2)
+        let moveEnemy = SKAction.move(to: endPoint, duration: 1.8)
         let deleteEnemy = SKAction.removeFromParent()
         let enemySequence = SKAction.sequence([moveEnemy, deleteEnemy])
         
@@ -1489,17 +1533,178 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
         meteor.physicsBody!.contactTestBitMask = PhysicsCategories.Player
         self.addChild(meteor)
         
-        let moveMeteor = SKAction.move(to: endPoint, duration: 4.3)
-        let deleteMeteor = SKAction.removeFromParent()
-        let meteorSequence = SKAction.sequence([moveMeteor, deleteMeteor])
-        
-        if currentGameState == gameState.inGame {
-            meteor.run(meteorSequence)
+        if defaults.string(forKey: "meteor2") == "meteor2" {
+            print("Running Meoter 2")
+            let moveMeteor = SKAction.move(to: endPoint, duration: 5.0)
+            let deleteMeteor = SKAction.removeFromParent()
+            let meteorSequence = SKAction.sequence([moveMeteor, deleteMeteor])
             
+            if currentGameState == gameState.inGame {
+                meteor.run(meteorSequence)
+                
+            }
+            
+        } else {
+            let moveMeteor = SKAction.move(to: endPoint, duration: 4.5)
+            let deleteMeteor = SKAction.removeFromParent()
+            let meteorSequence = SKAction.sequence([moveMeteor, deleteMeteor])
+            
+            if currentGameState == gameState.inGame {
+                meteor.run(meteorSequence)
+            }
+        }
+        
+        if defaults.string(forKey: "meteor3") == "meteor3" {
+            print("Running Meoteor 3")
+            let moveMeteor = SKAction.move(to: endPoint, duration: 3.5)
+            let deleteMeteor = SKAction.removeFromParent()
+            let meteorSequence = SKAction.sequence([moveMeteor, deleteMeteor])
+            
+            if currentGameState == gameState.inGame {
+                meteor.run(meteorSequence)
+                
+            }
+        }
+        if defaults.string(forKey: "meteor4") == "meteor4" {
+            print("Running Meote0r 4")
+            let moveMeteor = SKAction.move(to: endPoint, duration: 3.2)
+            let deleteMeteor = SKAction.removeFromParent()
+            let meteorSequence = SKAction.sequence([moveMeteor, deleteMeteor])
+            
+            if currentGameState == gameState.inGame {
+                meteor.run(meteorSequence)
+                
+            }
+        }
+        if defaults.string(forKey: "meteor5") == "meteor5" {
+            
+            let moveMeteor = SKAction.move(to: endPoint, duration: 3.2)
+            let deleteMeteor = SKAction.removeFromParent()
+            let meteorSequence = SKAction.sequence([moveMeteor, deleteMeteor])
+            
+            if currentGameState == gameState.inGame {
+                meteor.run(meteorSequence)
+                
+            }
+        }
+        if defaults.string(forKey: "meteor6") == "meteor6" {
+            
+            let moveMeteor = SKAction.move(to: endPoint, duration: 3.0)
+            let deleteMeteor = SKAction.removeFromParent()
+            let meteorSequence = SKAction.sequence([moveMeteor, deleteMeteor])
+            
+            if currentGameState == gameState.inGame {
+                meteor.run(meteorSequence)
+                
+            }
+        }
+        if defaults.string(forKey: "meteor7") == "meteor7" {
+            
+            let moveMeteor = SKAction.move(to: endPoint, duration: 3.0)
+            let deleteMeteor = SKAction.removeFromParent()
+            let meteorSequence = SKAction.sequence([moveMeteor, deleteMeteor])
+            
+            if currentGameState == gameState.inGame {
+                meteor.run(meteorSequence)
+                
+            }
+        }
+        if defaults.string(forKey: "meteor8") == "meteor8" {
+            
+            let moveMeteor = SKAction.move(to: endPoint, duration: 3.0)
+            let deleteMeteor = SKAction.removeFromParent()
+            let meteorSequence = SKAction.sequence([moveMeteor, deleteMeteor])
+            
+            if currentGameState == gameState.inGame {
+                meteor.run(meteorSequence)
+                
+            }
+        }
+        if defaults.string(forKey: "meteor9") == "meteor9" {
+            
+            let moveMeteor = SKAction.move(to: endPoint, duration: 3.2)
+            let deleteMeteor = SKAction.removeFromParent()
+            let meteorSequence = SKAction.sequence([moveMeteor, deleteMeteor])
+            
+            if currentGameState == gameState.inGame {
+                meteor.run(meteorSequence)
+                
+            }
+        }
+        if defaults.string(forKey: "meteor10") == "meteor10" {
+            
+            let moveMeteor = SKAction.move(to: endPoint, duration: 3.0)
+            let deleteMeteor = SKAction.removeFromParent()
+            let meteorSequence = SKAction.sequence([moveMeteor, deleteMeteor])
+            
+            if currentGameState == gameState.inGame {
+                meteor.run(meteorSequence)
+                
+            }
         }
         
     }
     
+    func spawnSetSlowMeteors() {
+        
+        let randomXStart = random(min: gameArea.minX, max: gameArea.maxX)
+        let randomXEnd = random(min: gameArea.minX, max: gameArea.maxX)
+        
+        let startPoint = CGPoint(x: randomXStart, y: self.size.height * 1.2)
+        let endPoint = CGPoint(x: randomXEnd, y: -self.size.height * 0.2)
+        
+        
+          if defaults.string(forKey: "powerup2Purchased") == "powerup2Purchased" {
+        
+        let meteor = SKSpriteNode(imageNamed: "meteor.png")
+        meteor.name = "Meteor"
+        meteor.setScale(1.1)
+        meteor.position = startPoint
+        meteor.zPosition = 2
+        meteor.physicsBody = SKPhysicsBody(rectangleOf: meteor.size)
+        meteor.physicsBody!.affectedByGravity = false
+        meteor.physicsBody!.categoryBitMask = PhysicsCategories.Meteor
+        meteor.physicsBody!.collisionBitMask = PhysicsCategories.None
+        meteor.physicsBody!.contactTestBitMask = PhysicsCategories.Player | PhysicsCategories.Bullet
+        self.addChild(meteor)
+            
+            print("Running Slow Meteors")
+            let moveMeteor = SKAction.move(to: endPoint, duration: 6.6)
+            let deleteMeteor = SKAction.removeFromParent()
+            let meteorSequence = SKAction.sequence([moveMeteor, deleteMeteor])
+            
+            if currentGameState == gameState.inGame {
+                meteor.run(meteorSequence)
+                
+            }
+            
+          } else {
+            
+            let meteor = SKSpriteNode(imageNamed: "meteor.png")
+            meteor.name = "Meteor"
+            meteor.setScale(1.1)
+            meteor.position = startPoint
+            meteor.zPosition = 2
+            meteor.physicsBody = SKPhysicsBody(rectangleOf: meteor.size)
+            meteor.physicsBody!.affectedByGravity = false
+            meteor.physicsBody!.categoryBitMask = PhysicsCategories.Meteor
+            meteor.physicsBody!.collisionBitMask = PhysicsCategories.None
+            meteor.physicsBody!.contactTestBitMask = PhysicsCategories.Player | PhysicsCategories.Bullet
+            self.addChild(meteor)
+            
+            print("Running Slow Meteors")
+            let moveMeteor = SKAction.move(to: endPoint, duration: 6.6)
+            let deleteMeteor = SKAction.removeFromParent()
+            let meteorSequence = SKAction.sequence([moveMeteor, deleteMeteor])
+            
+            if currentGameState == gameState.inGame {
+                meteor.run(meteorSequence)
+                
+            }
+            
+        }
+
+    }
 
     // fire bullet from cat
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -1510,7 +1715,6 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
             let nodeITapped = atPoint(pointOfTouch)
             
             if nodeITapped.name == "fireShockWave" {
-                
                
                 
                 let bullet = SKSpriteNode(imageNamed: "shockWave.png")
@@ -1526,7 +1730,7 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
                 bullet.physicsBody!.contactTestBitMask = PhysicsCategories.Enemy
                 self.addChild(bullet)
                 
-                let moveBullet =  SKAction.moveTo(y: self.size.height + bullet.size.height, duration: 7)
+                let moveBullet =  SKAction.moveTo(y: self.size.height + bullet.size.height, duration: 5.0)
                 let deleteBullet = SKAction.removeFromParent()
                 let bulletSequence = SKAction.sequence([moveBullet, deleteBullet])
                 bullet.run(bulletSequence)
@@ -1534,8 +1738,7 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
                 fireShockWaveLbl.isHidden = true
             }
         }
-        
-        
+      
         if currentGameState == gameState.inGame {
         fireBullet()
       

@@ -6,7 +6,7 @@
 // Make sure to credit https://www.iconfinder.com/DOTonPAPER for cat icon on home screen.
 // http://cienel.net/photoshop-tutorials/quick-tip-no.-8---create-a-cartoon-space-planet-in-photoshop
 //
-//
+// Github
 
 import UIKit
 import SpriteKit
@@ -16,11 +16,8 @@ import CoreData
 import StoreKit
 import SwiftyStoreKit
 
-
 class NewHomeScreen: UIViewController {
-
-   
-
+    
     @IBOutlet weak var imageView: UIImageView!
     
     var audioPlayer = AVAudioPlayer()
@@ -134,12 +131,8 @@ class NewHomeScreen: UIViewController {
         
        var numOfCoins = defaults.integer(forKey: "numOfCoins")
         numberOfCoins.text = "\(numOfCoins)"
-        
-        
-      
+    
     }
-    
-    
     
     @IBAction func playAction(_ sender: Any) {
         
@@ -147,7 +140,7 @@ class NewHomeScreen: UIViewController {
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "playerPicker") as! playerPickerVC
         self.present(nextViewController, animated:true, completion:nil)
         
-      //  var numOfCoins = defaults.integer(forKey: "numOfCoins")
+       // var numOfCoins = defaults.integer(forKey: "numOfCoins")
       //  defaults.set(numOfCoins + 200, forKey: "numOfCoins")
         
        audioPlayer.stop()
@@ -157,21 +150,17 @@ class NewHomeScreen: UIViewController {
             
             audioPlayer.stop()
         audioPlayer.volume = 0
-        
-        
-        
+
         }
         
         print("Success! Launching Player Picker")
-       
-       
-        
+    
     }
     
     @IBAction func upgradeBtnPressed(_ sender: Any) {
         
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "achieve") as! achievementsVC
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "coinStore") as! coinStoreVC
         self.present(nextViewController, animated:true, completion:nil)
         audioPlayer.stop()
         
@@ -191,11 +180,5 @@ class NewHomeScreen: UIViewController {
         
     }
     
-    
-    
-    
-    
-    
-    
-    
+   
 }

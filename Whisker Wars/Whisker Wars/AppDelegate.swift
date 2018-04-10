@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Initialize the Chartboost library
         Chartboost.start(withAppId: "5ac06578f7c1590bbdfdf5d1", appSignature: "f57aed811e696e414e94b009afae7d594a96375e", delegate: nil)
-        Chartboost.showInterstitial(CBLocationMainMenu)
+       // Chartboost.showInterstitial(CBLocationMainMenu)
         
         return true
         
