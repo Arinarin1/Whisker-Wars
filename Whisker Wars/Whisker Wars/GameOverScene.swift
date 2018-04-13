@@ -20,6 +20,7 @@ class GameOverScene: SKScene {
     let restartLabel = SKLabelNode(fontNamed: "House-Paint-Slab")
     let homeLevel = SKLabelNode(fontNamed: "House-Paint-Slab")
     let defaults = UserDefaults()
+    let addedLabel = SKLabelNode(fontNamed: "Helvetica-Neue")
     
    
     let bonus15 = SKSpriteNode(imageNamed: "bonus1.5.png")
@@ -118,16 +119,17 @@ class GameOverScene: SKScene {
         
       if defaults.string(forKey: "doubleCoins") == "double" {
         
-        if gameScore > 49 && gameScore < 100 {
+        if gameScore > 1 && gameScore < 100 {
             
             bonus15x2.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.34)
             bonus15x2.zPosition = 3
+            bonus15x2.name = "bonus"
             bonus15x2.setScale(1.7)
             self.addChild(bonus15x2)
             
-          //  let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+            let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
             
-           // bonus15x2.run(SKAction.repeatForever(animateList))
+            bonus15x2.run(SKAction.repeatForever(animateList))
             
             coinLabel.text! = "Total Coins: \(defaults.integer(forKey: "numOfCoins") + 30)"
             defaults.set(numOfCoins + 30, forKey: "numOfCoins")
@@ -138,12 +140,13 @@ class GameOverScene: SKScene {
             
             bonus2x2.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.34)
             bonus2x2.zPosition = 3
+            bonus2x2.name = "bonus"
             bonus2x2.setScale(1.7)
             self.addChild(bonus2x2)
             
-          //  let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+            let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
             
-          //  bonus2x2.run(SKAction.repeatForever(animateList))
+            bonus2x2.run(SKAction.repeatForever(animateList))
             
             coinLabel.text! = "Total Coins: \(defaults.integer(forKey: "numOfCoins") + 40)"
             defaults.set(numOfCoins + 40, forKey: "numOfCoins")
@@ -154,12 +157,13 @@ class GameOverScene: SKScene {
             
             bonus3x2.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.34)
             bonus3x2.zPosition = 3
+            bonus3x2.name = "bonus"
             bonus3x2.setScale(1.7)
             self.addChild(bonus3x2)
-         //
-         //   let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+         
+            let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
             
-          //  bonus3x2.run(SKAction.repeatForever(animateList))
+            bonus3x2.run(SKAction.repeatForever(animateList))
             
             coinLabel.text! = "Total Coins: \(defaults.integer(forKey: "numOfCoins") + 40)"
             defaults.set(numOfCoins + 40, forKey: "numOfCoins")
@@ -171,11 +175,12 @@ class GameOverScene: SKScene {
             bonus4x2.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.34)
             bonus4x2.zPosition = 3
             bonus4x2.setScale(1.7)
+            bonus4x2.name = "bonus"
             self.addChild(bonus4x2)
             
-          //  let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+           let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
             
-          //  bonus4x2.run(SKAction.repeatForever(animateList))
+            bonus4x2.run(SKAction.repeatForever(animateList))
             
             coinLabel.text! = "Total Coins: \(defaults.integer(forKey: "numOfCoins") + 100)"
             defaults.set(numOfCoins + 100, forKey: "numOfCoins")
@@ -187,11 +192,12 @@ class GameOverScene: SKScene {
             bonus5x2.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.34)
             bonus5x2.zPosition = 3
             bonus5x2.setScale(1.7)
+            bonus5x2.name = "bonus"
             self.addChild(bonus5x2)
             
-          //  let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+           let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
             
-          //  bonus5x2.run(SKAction.repeatForever(animateList))
+            bonus5x2.run(SKAction.repeatForever(animateList))
             
             coinLabel.text! = "Total Coins: \(defaults.integer(forKey: "numOfCoins") + 100)"
             defaults.set(numOfCoins + 100, forKey: "numOfCoins")
@@ -203,11 +209,12 @@ class GameOverScene: SKScene {
             bonus6x2.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.34)
             bonus6x2.zPosition = 3
             bonus6x2.setScale(1.7)
+            bonus6x2.name = "bonus"
             self.addChild(bonus6x2)
             
-          //  let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+           let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
             
-          //  bonus6x2.run(SKAction.repeatForever(animateList))
+            bonus6x2.run(SKAction.repeatForever(animateList))
             
             coinLabel.text! = "Total Coins: \(defaults.integer(forKey: "numOfCoins") + 500)"
             defaults.set(numOfCoins + 500, forKey: "numOfCoins")
@@ -217,16 +224,17 @@ class GameOverScene: SKScene {
         
       } else {
         
-        if gameScore > 49 && gameScore < 100 {
+        if gameScore > 1 && gameScore < 100 {
             
             bonus15.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.34)
             bonus15.zPosition = 3
             bonus15.setScale(1.7)
+            bonus15.name = "bonus"
             self.addChild(bonus15)
             
-           // let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+           let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
             
-           // bonus15.run(SKAction.repeatForever(animateList))
+            bonus15.run(SKAction.repeatForever(animateList))
             
             coinLabel.text! = "Total Coins: \(defaults.integer(forKey: "numOfCoins") + 15)"
             defaults.set(numOfCoins + 15, forKey: "numOfCoins")
@@ -238,11 +246,12 @@ class GameOverScene: SKScene {
             bonus2.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.34)
             bonus2.zPosition = 3
             bonus2.setScale(1.7)
+            bonus2.name = "bonus"
             self.addChild(bonus2)
             
-            //let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+            let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
             
-           //bonus2.run(SKAction.repeatForever(animateList))
+           bonus2.run(SKAction.repeatForever(animateList))
             
             coinLabel.text! = "Total Coins: \(defaults.integer(forKey: "numOfCoins") + 20)"
             defaults.set(numOfCoins + 20, forKey: "numOfCoins")
@@ -254,11 +263,12 @@ class GameOverScene: SKScene {
             bonus3.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.34)
             bonus3.zPosition = 3
             bonus3.setScale(1.7)
+            bonus3.name = "bonus"
             self.addChild(bonus3)
             
-           // let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+        let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
             
-           // bonus3.run(SKAction.repeatForever(animateList))
+        bonus3.run(SKAction.repeatForever(animateList))
             
             coinLabel.text! = "Total Coins: \(defaults.integer(forKey: "numOfCoins") + 20)"
             defaults.set(numOfCoins + 20, forKey: "numOfCoins")
@@ -270,12 +280,13 @@ class GameOverScene: SKScene {
             bonus4.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.34)
             bonus4.zPosition = 3
             bonus4.setScale(1.7)
+            bonus4.name = "bonus"
             self.addChild(bonus4)
             
             
-            //let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+            let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
             
-            //bonus4.run(SKAction.repeatForever(animateList))
+            bonus4.run(SKAction.repeatForever(animateList))
             
             coinLabel.text! = "Total Coins: \(defaults.integer(forKey: "numOfCoins") + 50)"
             defaults.set(numOfCoins + 50, forKey: "numOfCoins")
@@ -287,11 +298,12 @@ class GameOverScene: SKScene {
             bonus5.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.34)
             bonus5.zPosition = 3
             bonus5.setScale(1.7)
+            bonus5.name = "bonus"
             self.addChild(bonus5)
             
-           // let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+        let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
             
-           // bonus5.run(SKAction.repeatForever(animateList))
+        bonus5.run(SKAction.repeatForever(animateList))
             
             coinLabel.text! = "Total Coins: \(defaults.integer(forKey: "numOfCoins") + 100)"
             defaults.set(numOfCoins + 100, forKey: "numOfCoins")
@@ -303,11 +315,12 @@ class GameOverScene: SKScene {
             bonus6.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.34)
             bonus6.zPosition = 3
             bonus6.setScale(1.7)
+            bonus6.name = "bonus"
             self.addChild(bonus6)
             
-           /// let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+            let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
             
-           // bonus6.run(SKAction.repeatForever(animateList))
+            bonus6.run(SKAction.repeatForever(animateList))
             
             coinLabel.text! = "Total Coins: \(defaults.integer(forKey: "numOfCoins") + 250)"
             defaults.set(numOfCoins + 250, forKey: "numOfCoins")
@@ -340,7 +353,37 @@ class GameOverScene: SKScene {
                 
                 
             }
-      
+            
+       if nodeITapped.name == "bonus" {
+        
+        bonus15x2.isHidden = true
+        bonus2x2.isHidden = true
+        bonus3x2.isHidden = true
+        bonus4x2.isHidden = true
+        bonus5x2.isHidden = true
+        bonus6x2.isHidden = true
+        
+        bonus15.isHidden = true
+        bonus2.isHidden = true
+        bonus3.isHidden = true
+        bonus4.isHidden = true
+        bonus5.isHidden = true
+        bonus6.isHidden = true
+        
+        
+        addedLabel.text = "Coins Already Added!"
+        addedLabel.fontSize = 35
+        addedLabel.zPosition = 1
+        addedLabel.fontColor = SKColor.yellow
+        addedLabel.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.34)
+        addChild(addedLabel)
+        
+        let animateList = SKAction.sequence([SKAction.fadeOut(withDuration: 2.7)])
+        
+        addedLabel.run(SKAction.repeatForever(animateList))
+        
+        
+            }
         
     }
     

@@ -899,18 +899,7 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
         case 10: levelDuration = 1.1
             self.defaults.set("meowbot10", forKey: "meowbot10")
              self.defaults.set("meowbot", forKey: "meowbot9")
-     
-            
-            // this will queue the on going moment of the meowbot to the first known static point
-        case 10: levelDuration = 1.2
-        self.defaults.set("meowbot10", forKey: meowbot)
-            self.defaults.10.10.set("meowbot",""meowbot2)
-            
-        case 11: levelDuration = 1.3
-            self.defaults.set("meowbot"), "moe10"
-            self.defaults.set("meowbot")m "moewbot11"
-            
-            // This will que the on going moment from the nowbot to hte first point of the return of the map to hte first known pount of return
+    
             
             
         default:
@@ -1675,7 +1664,7 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
         meteor.physicsBody!.affectedByGravity = false
         meteor.physicsBody!.categoryBitMask = PhysicsCategories.Meteor
         meteor.physicsBody!.collisionBitMask = PhysicsCategories.None
-        meteor.physicsBody!.contactTestBitMask = PhysicsCategories.Player | PhysicsCategories.Bullet
+        meteor.physicsBody!.contactTestBitMask = PhysicsCategories.Player // meteor can pass through
         self.addChild(meteor)
             
             print("Running Slow Meteors")
@@ -1699,7 +1688,7 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
             meteor.physicsBody!.affectedByGravity = false
             meteor.physicsBody!.categoryBitMask = PhysicsCategories.Meteor
             meteor.physicsBody!.collisionBitMask = PhysicsCategories.None
-            meteor.physicsBody!.contactTestBitMask = PhysicsCategories.Player | PhysicsCategories.Bullet
+            meteor.physicsBody!.contactTestBitMask = PhysicsCategories.Player | PhysicsCategories.Bullet // metoers can't pass through
             self.addChild(meteor)
             
             print("Running Slow Meteors")
