@@ -153,12 +153,6 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
             
         }
         
-        //self.addChild(leftArm)
-        
-       // let myJoint = SKPhysicsJointPin.joint(withBodyA: leftArm.physicsBody!, bodyB: player.physicsBody!, anchor: CGPoint(x: self.size.width / 0.6, y: self.size.height * 0.2))
-        
-       // self.physicsWorld.add(myJoint)
-        
         
         let background = SKSpriteNode(imageNamed: "WWFINAL.png")
         background.size = self.size
@@ -251,6 +245,10 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
         if livesNumberPowerUp == 0 {
             runGameOver()
         }
+        
+        // this will run when hte player moves on the left his bosy to the statting point
+        
+        
         
          if defaults.string(forKey: "powerup1Purchased") == "powerup1Purchased" {
          print("default function ran")
@@ -902,7 +900,19 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
             self.defaults.set("meowbot10", forKey: "meowbot10")
              self.defaults.set("meowbot", forKey: "meowbot9")
      
-    
+            
+            // this will queue the on going moment of the meowbot to the first known static point
+        case 10: levelDuration = 1.2
+        self.defaults.set("meowbot10", forKey: meowbot)
+            self.defaults.10.10.set("meowbot",""meowbot2)
+            
+        case 11: levelDuration = 1.3
+            self.defaults.set("meowbot"), "moe10"
+            self.defaults.set("meowbot")m "moewbot11"
+            
+            // This will que the on going moment from the nowbot to hte first point of the return of the map to hte first known pount of return
+            
+            
         default:
             levelDuration = 0.9
             print("Cannot find level info to spawn meowbot")
