@@ -23,7 +23,7 @@ class battleOfCatmixia2: SKScene, SKPhysicsContactDelegate {
     
     var levelNumber = 0
     
-    let player = SKSpriteNode(imageNamed: "privateWhiskers.png")
+    let player = SKSpriteNode(imageNamed: "sergantPursington.png")
     let catmixiaPlanet = SKSpriteNode(imageNamed: "planetCatmixia")
     
     

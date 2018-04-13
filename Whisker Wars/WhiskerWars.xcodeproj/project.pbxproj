@@ -38,6 +38,9 @@
 		5368EF2F20806898007DDF8E /* powerup2Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5368EF2E20806896007DDF8E /* powerup2Icon.png */; };
 		5368EF312080697E007DDF8E /* powerup3Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5368EF302080697C007DDF8E /* powerup3Icon.png */; };
 		5368EF3520806A63007DDF8E /* powerup4Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5368EF3420806A61007DDF8E /* powerup4Icon.png */; };
+		5368EF37208110ED007DDF8E /* startingSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5368EF36208110EC007DDF8E /* startingSound.wav */; };
+		5368EF3B208125F4007DDF8E /* introHelp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5368EF39208125F3007DDF8E /* introHelp.png */; };
+		5368EF3D2081278F007DDF8E /* info2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5368EF3C2081278F007DDF8E /* info2.png */; };
 		536E60012066DC07005BB2F8 /* achievementsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536E60002066DC07005BB2F8 /* achievementsVC.swift */; };
 		536E60032066DC19005BB2F8 /* coinStoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536E60022066DC19005BB2F8 /* coinStoreVC.swift */; };
 		536E600920673728005BB2F8 /* shockWave.png in Resources */ = {isa = PBXBuildFile; fileRef = 536E600820673727005BB2F8 /* shockWave.png */; };
@@ -169,6 +172,9 @@
 		5368EF2E20806896007DDF8E /* powerup2Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = powerup2Icon.png; sourceTree = "<group>"; };
 		5368EF302080697C007DDF8E /* powerup3Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = powerup3Icon.png; sourceTree = "<group>"; };
 		5368EF3420806A61007DDF8E /* powerup4Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = powerup4Icon.png; sourceTree = "<group>"; };
+		5368EF36208110EC007DDF8E /* startingSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = startingSound.wav; sourceTree = "<group>"; };
+		5368EF39208125F3007DDF8E /* introHelp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = introHelp.png; sourceTree = "<group>"; };
+		5368EF3C2081278F007DDF8E /* info2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info2.png; sourceTree = "<group>"; };
 		536E60002066DC07005BB2F8 /* achievementsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = achievementsVC.swift; sourceTree = "<group>"; };
 		536E60022066DC19005BB2F8 /* coinStoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coinStoreVC.swift; sourceTree = "<group>"; };
 		536E600820673727005BB2F8 /* shockWave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockWave.png; sourceTree = "<group>"; };
@@ -300,6 +306,9 @@
 		530DAC6B1ECCC3F300E05433 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				5368EF3C2081278F007DDF8E /* info2.png */,
+				5368EF39208125F3007DDF8E /* introHelp.png */,
+				5368EF36208110EC007DDF8E /* startingSound.wav */,
 				5368EF3420806A61007DDF8E /* powerup4Icon.png */,
 				5368EF302080697C007DDF8E /* powerup3Icon.png */,
 				5368EF2E20806896007DDF8E /* powerup2Icon.png */,
@@ -543,6 +552,7 @@
 				5368EF3520806A63007DDF8E /* powerup4Icon.png in Resources */,
 				539BB1FD202F8E1F00820E20 /* fishShipH1.png in Resources */,
 				539C0EF520728A0C00017384 /* MONEY_2-03-512.png in Resources */,
+				5368EF3D2081278F007DDF8E /* info2.png in Resources */,
 				53F1E2C61E6E21D500C13280 /* meowbot2.png in Resources */,
 				5368EF2D208067E9007DDF8E /* powerupIcon1.png in Resources */,
 				5368EF312080697E007DDF8E /* powerup3Icon.png in Resources */,
@@ -580,6 +590,7 @@
 				5375BB921E847CCF0058D376 /* setting@2x.png in Resources */,
 				53A045332073ED6D00E38E73 /* double4.png in Resources */,
 				53B782CF201EF7E2002D5AD4 /* upgradeCat.png in Resources */,
+				5368EF37208110ED007DDF8E /* startingSound.wav in Resources */,
 				5334036D1EA9DBAE00A2F2D6 /* pressThumb.png in Resources */,
 				5334B17D2027F90400E56A50 /* hitTwiceBackground.png in Resources */,
 				53F1E2E71E7B149D00C13280 /* play-circle-fill-128.png in Resources */,
@@ -599,6 +610,7 @@
 				53F1E2DA1E733E7000C13280 /* explosion_03.wav in Resources */,
 				53A2D36C1E9D7346000A8A21 /* Break Out - Lower Volume.mp3 in Resources */,
 				53C88BB12022B0120057D81D /* majorMittens.png in Resources */,
+				5368EF3B208125F4007DDF8E /* introHelp.png in Resources */,
 				53A0453E2074048D00E38E73 /* bonus4x3.png in Resources */,
 				53A0452F2073ED6D00E38E73 /* double2.png in Resources */,
 				53F1E2ED1E7B14AF00C13280 /* cog-settings-alt-128.png in Resources */,

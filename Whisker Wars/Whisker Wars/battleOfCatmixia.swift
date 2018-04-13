@@ -109,8 +109,8 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
       //  let fishShipImg = UIImageView()
       // fishShipImg.image = UIImage(named: ("nameofasset"))
         
-        audioPlayer = SKAudioNode(fileNamed: "1.mp3")
-        audioPlayer.autoplayLooped = true
+        audioPlayer = SKAudioNode(fileNamed: "startingSound.wav")
+         audioPlayer.autoplayLooped = false
         self.addChild(audioPlayer)
         
         leftArm.physicsBody = SKPhysicsBody(rectangleOf: leftArm.size)

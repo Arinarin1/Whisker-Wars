@@ -140,8 +140,8 @@ class NewHomeScreen: UIViewController {
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "playerPicker") as! playerPickerVC
         self.present(nextViewController, animated:true, completion:nil)
         
-       // var numOfCoins = defaults.integer(forKey: "numOfCoins")
-      //  defaults.set(numOfCoins + 200, forKey: "numOfCoins")
+        var numOfCoins = defaults.integer(forKey: "numOfCoins")
+       defaults.set(numOfCoins + 200, forKey: "numOfCoins")
         
        audioPlayer.stop()
        audioPlayer.volume = 0

@@ -18,8 +18,11 @@ class tapToBegin: SKScene {
 
     let tip = SKLabelNode(fontNamed: "House-Paint-Slab")
     
+      var audioPlayer = SKAudioNode()
+    
     override func didMove(to view: SKView) {
         
+
         tip.text = " "
         tip.fontSize = 40
         tip.fontColor = SKColor.white
@@ -34,22 +37,17 @@ class tapToBegin: SKScene {
         background.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
         background.zPosition = 0
         self.addChild(background)
+       
         
-        let drag = SKSpriteNode(imageNamed: "dragThumb.png")
-        drag.setScale(1.5)
-        drag.position = CGPoint(x: self.size.width / 2.40, y: self.size.height / 2)
-        drag.zPosition = 1
-        self.addChild(drag)
-        
-        let press = SKSpriteNode(imageNamed: "pressThumb.png")
-        press.setScale(1.5)
-        press.position = CGPoint(x: self.size.width / 1.78, y: self.size.height / 2)
+        let press = SKSpriteNode(imageNamed: "info2.png")
+        press.setScale(1.8)
+        press.position = CGPoint(x: self.size.width / 2, y: self.size.height / 4.6)
         press.zPosition = 1
         self.addChild(press)
         
-        let iphone = SKSpriteNode(imageNamed: "iPhoneDrawing.png")
-        iphone.setScale(1.2)
-        iphone.position = CGPoint(x: self.size.width / 2.03, y: self.size.height / 1.6)
+        let iphone = SKSpriteNode(imageNamed: "introHelp.png")
+        iphone.setScale(1.9)
+        iphone.position = CGPoint(x: self.size.width / 2, y: self.size.height / 1.5)
         iphone.zPosition = 1
         self.addChild(iphone)
         
@@ -58,8 +56,8 @@ class tapToBegin: SKScene {
         tapToBegin.name = "tap"
         tapToBegin.fontSize = 70
         tapToBegin.fontColor = SKColor.white
-        tapToBegin.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.left
-        tapToBegin.position = CGPoint (x: self.size.width / 3.1, y: self.size.height / 2.5)
+        tapToBegin.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.center
+        tapToBegin.position = CGPoint (x: self.size.width / 2, y: self.size.height / 2.7)
         tapToBegin.zPosition = 4
         
         var animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 0.88), SKAction.fadeOut(withDuration: 0.88)])
@@ -90,7 +88,6 @@ class tapToBegin: SKScene {
             if nodeITapped.name == "tap" {
                 
                 
-
                 
                 let sceneToMoveTo = battleOfCatmixia(size: self.size)
                 sceneToMoveTo.scaleMode = self.scaleMode

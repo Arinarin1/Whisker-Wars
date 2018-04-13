@@ -1139,7 +1139,6 @@ class battleOfCatmixia5: SKScene, SKPhysicsContactDelegate {
     
     func fireBullet() {
         
-        
         let bullet = SKSpriteNode(imageNamed: "hairBall.png")
         bullet.name = "Bullet"
         bullet.setScale(1.4)
@@ -1158,9 +1157,9 @@ class battleOfCatmixia5: SKScene, SKPhysicsContactDelegate {
         bullet.run(bulletSequence)
         
         
-        
-        
     }
+    
+    
     
     
     func spawnFishShip() {

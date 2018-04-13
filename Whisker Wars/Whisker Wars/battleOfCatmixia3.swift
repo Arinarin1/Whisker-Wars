@@ -24,7 +24,7 @@ class battleOfCatmixia3: SKScene, SKPhysicsContactDelegate {
     
     var levelNumber = 0
     
-    let player = SKSpriteNode(imageNamed: "privateWhiskers.png")
+    let player = SKSpriteNode(imageNamed: "commanderKitty.png")
     let catmixiaPlanet = SKSpriteNode(imageNamed: "planetCatmixia")
     
     
@@ -1151,7 +1151,7 @@ class battleOfCatmixia3: SKScene, SKPhysicsContactDelegate {
         bullet.physicsBody!.contactTestBitMask = PhysicsCategories.Enemy
         self.addChild(bullet)
         
-        let moveBullet =  SKAction.moveTo(y: self.size.height + bullet.size.height, duration: 1.8)
+        let moveBullet =  SKAction.moveTo(y: self.size.height + bullet.size.height, duration: 0.57)
         let deleteBullet = SKAction.removeFromParent()
         let bulletSequence = SKAction.sequence([moveBullet, deleteBullet])
         bullet.run(bulletSequence)

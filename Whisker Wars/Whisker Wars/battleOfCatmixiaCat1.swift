@@ -24,7 +24,7 @@ class battleOfCatmixiaCat1: SKScene, SKPhysicsContactDelegate {
     
     var levelNumber = 0
     
-    let player = SKSpriteNode(imageNamed: "privateWhiskers.png")
+    let player = SKSpriteNode(imageNamed: "privateLickens.png")
     let catmixiaPlanet = SKSpriteNode(imageNamed: "planetCatmixia")
     
     
@@ -1075,11 +1075,11 @@ class battleOfCatmixiaCat1: SKScene, SKPhysicsContactDelegate {
         
         switch levelNumber {
         case 1: levelDuration = 0.0
-        case 2: levelDuration = 25.0
+        case 2: levelDuration = 22.0
         case 3: levelDuration = 25.0
-        case 4: levelDuration = 30.0
-        case 5: levelDuration = 40.0
-        case 6: levelDuration = 40.0
+        case 4: levelDuration = 28.0
+        case 5: levelDuration = 34.0
+        case 6: levelDuration = 39.0
         case 7: levelDuration = 69.0
         case 8: levelDuration = 65.0
         case 9: levelDuration = 100.0

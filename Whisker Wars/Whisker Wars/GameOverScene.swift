@@ -92,7 +92,7 @@ class GameOverScene: SKScene {
         
         
         coinLabel.text = "Total Coins: \(defaults.integer(forKey: "numOfCoins"))"
-        coinLabel.fontSize = 100
+        coinLabel.fontSize = 93
         coinLabel.fontColor = SKColor.yellow
         coinLabel.zPosition = 1
         coinLabel.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.459)
@@ -101,7 +101,7 @@ class GameOverScene: SKScene {
        
         let highScoreLabel = SKLabelNode(fontNamed: "House-Paint-Slab")
         highScoreLabel.text = "High Score \(highScoreNumber)"
-        highScoreLabel.fontSize = 112
+        highScoreLabel.fontSize = 103
         highScoreLabel.fontColor = SKColor.white
         highScoreLabel.zPosition = 1
         highScoreLabel.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.55)
@@ -119,7 +119,7 @@ class GameOverScene: SKScene {
         
       if defaults.string(forKey: "doubleCoins") == "double" {
         
-        if gameScore > 1 && gameScore < 100 {
+        if gameScore > 49 && gameScore < 100 {
             
             bonus15x2.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.34)
             bonus15x2.zPosition = 3
@@ -127,7 +127,7 @@ class GameOverScene: SKScene {
             bonus15x2.setScale(1.7)
             self.addChild(bonus15x2)
             
-            let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+            let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 1.0), SKAction.fadeOut(withDuration: 1.0)])
             
             bonus15x2.run(SKAction.repeatForever(animateList))
             
@@ -144,7 +144,7 @@ class GameOverScene: SKScene {
             bonus2x2.setScale(1.7)
             self.addChild(bonus2x2)
             
-            let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+            let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 1), SKAction.fadeOut(withDuration: 1.4)])
             
             bonus2x2.run(SKAction.repeatForever(animateList))
             
@@ -161,7 +161,7 @@ class GameOverScene: SKScene {
             bonus3x2.setScale(1.7)
             self.addChild(bonus3x2)
          
-            let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+            let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 1), SKAction.fadeOut(withDuration: 1.4)])
             
             bonus3x2.run(SKAction.repeatForever(animateList))
             
@@ -178,7 +178,7 @@ class GameOverScene: SKScene {
             bonus4x2.name = "bonus"
             self.addChild(bonus4x2)
             
-           let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+           let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 1), SKAction.fadeOut(withDuration: 1.4)])
             
             bonus4x2.run(SKAction.repeatForever(animateList))
             
@@ -195,7 +195,7 @@ class GameOverScene: SKScene {
             bonus5x2.name = "bonus"
             self.addChild(bonus5x2)
             
-           let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+           let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 1), SKAction.fadeOut(withDuration: 1.4)])
             
             bonus5x2.run(SKAction.repeatForever(animateList))
             
@@ -212,7 +212,7 @@ class GameOverScene: SKScene {
             bonus6x2.name = "bonus"
             self.addChild(bonus6x2)
             
-           let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+           let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 1), SKAction.fadeOut(withDuration: 1.4)])
             
             bonus6x2.run(SKAction.repeatForever(animateList))
             
@@ -224,7 +224,7 @@ class GameOverScene: SKScene {
         
       } else {
         
-        if gameScore > 1 && gameScore < 100 {
+        if gameScore > 49 && gameScore < 100 {
             
             bonus15.position = CGPoint(x: self.size.width / 2, y: self.size.height * 0.34)
             bonus15.zPosition = 3
@@ -232,7 +232,7 @@ class GameOverScene: SKScene {
             bonus15.name = "bonus"
             self.addChild(bonus15)
             
-           let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+           let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 1.0), SKAction.fadeOut(withDuration: 1.0)])
             
             bonus15.run(SKAction.repeatForever(animateList))
             
@@ -249,7 +249,7 @@ class GameOverScene: SKScene {
             bonus2.name = "bonus"
             self.addChild(bonus2)
             
-            let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+            let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 1), SKAction.fadeOut(withDuration: 1.4)])
             
            bonus2.run(SKAction.repeatForever(animateList))
             
@@ -266,7 +266,7 @@ class GameOverScene: SKScene {
             bonus3.name = "bonus"
             self.addChild(bonus3)
             
-        let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+        let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 1), SKAction.fadeOut(withDuration: 1.4)])
             
         bonus3.run(SKAction.repeatForever(animateList))
             
@@ -284,7 +284,7 @@ class GameOverScene: SKScene {
             self.addChild(bonus4)
             
             
-            let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+            let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 1), SKAction.fadeOut(withDuration: 1.4)])
             
             bonus4.run(SKAction.repeatForever(animateList))
             
@@ -301,7 +301,7 @@ class GameOverScene: SKScene {
             bonus5.name = "bonus"
             self.addChild(bonus5)
             
-        let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+        let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 1), SKAction.fadeOut(withDuration: 1.4)])
             
         bonus5.run(SKAction.repeatForever(animateList))
             
@@ -318,7 +318,7 @@ class GameOverScene: SKScene {
             bonus6.name = "bonus"
             self.addChild(bonus6)
             
-            let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 2), SKAction.fadeOut(withDuration: 1.4)])
+            let animateList = SKAction.sequence([SKAction.fadeIn(withDuration: 1), SKAction.fadeOut(withDuration: 1.4)])
             
             bonus6.run(SKAction.repeatForever(animateList))
             
@@ -382,6 +382,7 @@ class GameOverScene: SKScene {
         
         addedLabel.run(SKAction.repeatForever(animateList))
         
+       
         
             }
         
