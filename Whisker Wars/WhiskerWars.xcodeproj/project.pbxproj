@@ -13,6 +13,7 @@
 		532508C61EB7C3660043B779 /* gameWonScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532508C21EB7C3660043B779 /* gameWonScene.swift */; };
 		532508C71EB7C3660043B779 /* tapToBegin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532508C31EB7C3660043B779 /* tapToBegin.swift */; };
 		532508D91EB7CA7D0043B779 /* Whisker_Wars.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 532508D71EB7CA7D0043B779 /* Whisker_Wars.xcdatamodeld */; };
+		532D04A52081DEDB007C00DA /* extraLife.png in Resources */ = {isa = PBXBuildFile; fileRef = 532D04A42081DEDA007C00DA /* extraLife.png */; };
 		532E677C202EAFAF0011A16C /* coinSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 532E677B202EAFAA0011A16C /* coinSound.mp3 */; };
 		533300E1207088B200286DF5 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 533300E0207088A900286DF5 /* 1.mp3 */; };
 		533300EB2070A31300286DF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533300EA2070A31300286DF5 /* Foundation.framework */; };
@@ -145,6 +146,7 @@
 		532508C21EB7C3660043B779 /* gameWonScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gameWonScene.swift; sourceTree = "<group>"; };
 		532508C31EB7C3660043B779 /* tapToBegin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tapToBegin.swift; sourceTree = "<group>"; };
 		532508D81EB7CA7D0043B779 /* Whisker_Wars.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Whisker_Wars.xcdatamodel; sourceTree = "<group>"; };
+		532D04A42081DEDA007C00DA /* extraLife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = extraLife.png; sourceTree = "<group>"; };
 		532E677B202EAFAA0011A16C /* coinSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coinSound.mp3; sourceTree = "<group>"; };
 		533300E0207088A900286DF5 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
 		533300EA2070A31300286DF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -306,6 +308,7 @@
 		530DAC6B1ECCC3F300E05433 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				532D04A42081DEDA007C00DA /* extraLife.png */,
 				5368EF3C2081278F007DDF8E /* info2.png */,
 				5368EF39208125F3007DDF8E /* introHelp.png */,
 				5368EF36208110EC007DDF8E /* startingSound.wav */,
@@ -619,6 +622,7 @@
 				53A045302073ED6D00E38E73 /* double3.png in Resources */,
 				533403701EAA85BB00A2F2D6 /* iPhoneDrawing.png in Resources */,
 				53B782CD201EC610002D5AD4 /* socialShare.png in Resources */,
+				532D04A52081DEDB007C00DA /* extraLife.png in Resources */,
 				53F1E26C1E5CDA8900C13280 /* Actions.sks in Resources */,
 				5375BB911E847CCF0058D376 /* cancel@2x.png in Resources */,
 				5334035E1EA46D4D00A2F2D6 /* level3Cover.png in Resources */,

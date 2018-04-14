@@ -1024,7 +1024,6 @@ class battleOfCatmixiaCat1: SKScene, SKPhysicsContactDelegate {
         
     }
     
-    
     func startSetSlowMeteors() {
         
         levelNumber += 1

@@ -428,6 +428,8 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
           defaults.set("powerup3Purchase", forKey: "powerup3Purchased")
           defaults.set("powerup4Purchase", forKey: "powerup4Purchased")
         
+         defaults.set("showHome", forKey: "showHome")
+        
           self.defaults.set("Startmeowbot2", forKey: "Startmeowbot")
         self.defaults.set("meowbot", forKey: "meowbot10")
         self.defaults.set("meowbot", forKey: "meowbot9")

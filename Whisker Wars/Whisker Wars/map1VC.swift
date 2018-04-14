@@ -17,10 +17,11 @@ import CoreData
 class map1VC: UIViewController {
    
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
         
         
          let scene = tapToBegin(size: CGSize(width: 1536, height: 2048))
@@ -36,8 +37,7 @@ class map1VC: UIViewController {
          scene.scaleMode = .aspectFill
         
            skView.presentScene(scene)
-        
-
+       
     
         
     }
