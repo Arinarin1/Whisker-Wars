@@ -23,6 +23,8 @@ enum RegisteredPurchase: String {
     
 }
 
+
+
 class NetworkActivityIndicatorManager: NSObject {
     
     private static var loadingCount = 0
@@ -48,6 +50,8 @@ class NetworkActivityIndicatorManager: NSObject {
 
 class coinStoreVC: UIViewController {
 
+   
+    
     let bundleID = "com.slushbox.WhiskerWars"
     @IBOutlet weak var purchase1Btn: UIButton!
     @IBOutlet weak var purchase2Btn: UIButton!
@@ -92,13 +96,14 @@ class coinStoreVC: UIViewController {
          if defaults.string(forKey: "doubleCoins") == "double" {
          
             coinFeverBtn.setTitle("Active", for: .normal)
+            coinFeverBtn.isEnabled = false
             
         }
         
         if defaults.string(forKey: "removeAds") == "removeAds" {
             
             removeAdsBtn.setTitle("Active", for: .normal)
-            
+            removeAdsBtn.isEnabled = false
         }
         
         numberOfCoins.text = "\(numOfCoins)"
@@ -253,12 +258,22 @@ class coinStoreVC: UIViewController {
             NetworkActivityIndicatorManager.NetworkOperationFinished()
             for product in result.restoredPurchases {
                 
-               // if product.productId == "slushbox.Weather.donate0.99" {
+                if product.productId == "com.slushbox.WhiskerWars.DoubleCoins" {
                     
-                  //  defaults.set("purchased1", forKey: "purchased1")
+                    self.defaults.set("double", forKey: "doubleCoins")
                     
-                   // print("Restored purchase 1")
-             //   }
+                    print("Restored Double Coins")
+                }
+                
+                if product.productId == "com.slushbox.WhiskerWars.RemoveAds" {
+                    
+                    self.defaults.set("removeAds", forKey: "removeAds")
+                    
+                    print("Restored remove ads")
+                }
+                
+                
+                
                 if product.needsFinishTransaction {
                     SwiftyStoreKit.finishTransaction(product.transaction)
                 }
@@ -308,6 +323,7 @@ class coinStoreVC: UIViewController {
                     SwiftyStoreKit.finishTransaction(product.transaction)
                 }
             }
+            
             if let alert = self.alertForPurchaseResult(result: result) {
                 self.showAlert(alert: alert)
             }
@@ -369,10 +385,16 @@ class coinStoreVC: UIViewController {
         
          Chartboost.start(withAppId: "5ac06578f7c1590bbdfdf5d1", appSignature: "f57aed811e696e414e94b009afae7d594a96375e", delegate: nil)
         Chartboost.showRewardedVideo(CBLocationMainMenu)
-        Chartboost.cacheRewardedVideo(CBLocationMainMenu)
-        Chartboost.setDelegate(self)
-        watchFreeVideoBtn.transform = CGAffineTransform(scaleX: 0.83, y: 0.83)
         
+        didCompleteRewardedVideo(location: CBLocationMainMenu, withReward: 5)
+        
+        
+        Chartboost.setDelegate(self)
+        
+        
+        
+        
+        watchFreeVideoBtn.transform = CGAffineTransform(scaleX: 0.83, y: 0.83)
         UIView.animate(withDuration: 2.0,
                        delay: 0,
                        usingSpringWithDamping: 0.2,
@@ -580,8 +602,7 @@ extension coinStoreVC: ChartboostDelegate {
             
             
             print("Restore Success: \(results.restoredPurchases)")
-              coinFeverBtn.setTitle("Active", for: .normal)
-              removeAdsBtn.setTitle("Active", for: .normal)
+            
             return alertWithTitle(title: "Purchase Restored", message: "All purchases have been restored!")
             
             

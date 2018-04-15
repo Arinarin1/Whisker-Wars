@@ -86,7 +86,7 @@ class settingsVC: UIViewController {
             
             let post = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
             
-            post!.setInitialText("My high score on @WhiskerWarsApp is \(highScoreNumber). Still in developement. Coming soon!")
+            post!.setInitialText("My high score on @WhiskerWarsGame is \(highScoreNumber). Now on the iOS App Store! #WhiskerWars")
             post!.add(UIImage(named: ""))
             
             
@@ -109,7 +109,7 @@ class settingsVC: UIViewController {
             
             let post = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
             
-            post?.setInitialText("My high score on @WhiskerWarsApp is \(highScoreNumber). Still in developement. Coming soon!")
+            post?.setInitialText("My high score on @WhiskerWarsGame is \(highScoreNumber). Now on the iOS App Store! #WhiskerWars")
             post?.add(UIImage(named: ""))
             
             self.present((post)!, animated: true, completion: nil)

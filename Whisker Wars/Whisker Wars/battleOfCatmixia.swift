@@ -154,7 +154,7 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
         }
         
         
-        let background = SKSpriteNode(imageNamed: "WWFINAL.png")
+        let background = SKSpriteNode(imageNamed: "NewBack.png")
         background.size = self.size
         background.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
         background.zPosition = 0
@@ -874,16 +874,16 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
         switch levelNumber {
         case 1: levelDuration = 3.5
              self.defaults.set("Startmeowbot", forKey: "Startmeowbot")
-        case 2: levelDuration = 2.0
+        case 2: levelDuration = 2.5
             self.defaults.set("meowbot2", forKey: "meowbot2")
              self.defaults.set("Startmeowbot2", forKey: "Startmeowbot")
-        case 3: levelDuration = 1.3
+        case 3: levelDuration = 2.0
             self.defaults.set("meowbot3", forKey: "meowbot3")
             self.defaults.set("meowbot", forKey: "meowbot2")
-        case 4: levelDuration = 1.3
+        case 4: levelDuration = 1.6
             self.defaults.set("meowbot4", forKey: "meowbot4")
             self.defaults.set("meowbot", forKey: "meowbot3")
-        case 5: levelDuration = 1.3
+        case 5: levelDuration = 1.4
             self.defaults.set("meowbot5", forKey: "meowbot5")
              self.defaults.set("meowbot", forKey: "meowbot4")
         case 6: levelDuration = 1.3
@@ -940,27 +940,27 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
         case 1: levelDuration = 4.2
              self.defaults.set("Startmeteor", forKey: "StartMeteor")
              self.defaults.set("meteor", forKey: "Startmeteor")
-        case 2: levelDuration = 3.2
+        case 2: levelDuration = 3.8
              self.defaults.set("meteor2", forKey: "meteor2")
-        case 3: levelDuration = 2.8
+        case 3: levelDuration = 3.7
             self.defaults.set("meteor3", forKey: "meteor3")
             self.defaults.set("meteor", forKey: "meteor2")
-        case 4: levelDuration = 2.6
+        case 4: levelDuration = 3.5
             self.defaults.set("meteor4", forKey: "meteor4")
             self.defaults.set("meteor", forKey: "meteor3")
-        case 5: levelDuration = 2.7
+        case 5: levelDuration = 3.2
             self.defaults.set("meteor5", forKey: "meteor5")
             self.defaults.set("meteor", forKey: "meteor4")
-        case 6: levelDuration = 2.7
+        case 6: levelDuration = 2.8
             self.defaults.set("meteor6", forKey: "meteor6")
             self.defaults.set("meteor", forKey: "meteor5")
-        case 7: levelDuration = 2.9
+        case 7: levelDuration = 2.8
             self.defaults.set("meteor7", forKey: "meteor7")
             self.defaults.set("meteor", forKey: "meteor6")
         case 8: levelDuration = 2.7
             self.defaults.set("meteor8", forKey: "meteor8")
             self.defaults.set("meteor", forKey: "meteor7")
-        case 9: levelDuration = 2.4
+        case 9: levelDuration = 2.5
             self.defaults.set("meteor9", forKey: "meteor9")
             self.defaults.set("meteor", forKey: "meteor8")
         case 10: levelDuration = 2.2
@@ -985,22 +985,22 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
             switch levelNumber {
             case 1: levelDuration = 4.0
                  self.defaults.set("Startmeteor", forKey: "Startmeteor")
-            case 2: levelDuration = 2.9
+            case 2: levelDuration = 3.5
                 self.defaults.set("meteor2", forKey: "meteor2")
                  self.defaults.set("meteor", forKey: "Startmeteor")
-            case 3: levelDuration = 2.7
+            case 3: levelDuration = 3.3
             self.defaults.set("meteor3", forKey: "meteor3")
             self.defaults.set("meteor", forKey: "meteor2")
-            case 4: levelDuration = 2.5
+            case 4: levelDuration = 3.1
             self.defaults.set("meteor4", forKey: "meteor4")
             self.defaults.set("meteor", forKey: "meteor3")
-            case 5: levelDuration = 2.2
+            case 5: levelDuration = 2.9
             self.defaults.set("meteor5", forKey: "meteor5")
             self.defaults.set("meteor", forKey: "meteor4")
-            case 6: levelDuration = 2.0
+            case 6: levelDuration = 2.7
             self.defaults.set("meteor6", forKey: "meteor6")
             self.defaults.set("meteor", forKey: "meteor5")
-            case 7: levelDuration = 2.0
+            case 7: levelDuration = 2.5
             self.defaults.set("meteor7", forKey: "meteor7")
             self.defaults.set("meteor", forKey: "meteor6")
             case 8: levelDuration = 2.3
@@ -1041,16 +1041,16 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
         var levelDuration = TimeInterval()
         
         switch levelNumber {
-        case 1: levelDuration = 11
-        case 2: levelDuration = 11
-        case 3: levelDuration = 11
-        case 4: levelDuration = 11
-        case 5: levelDuration = 10
-        case 6: levelDuration = 9
-        case 7: levelDuration = 9
-        case 8: levelDuration = 8
+        case 1: levelDuration = 17
+        case 2: levelDuration = 17
+        case 3: levelDuration = 15
+        case 4: levelDuration = 12
+        case 5: levelDuration = 11
+        case 6: levelDuration = 10
+        case 7: levelDuration = 10
+        case 8: levelDuration = 9
         case 9: levelDuration = 7
-        case 10: levelDuration = 6
+        case 10: levelDuration = 7
             
         default:
             levelDuration = 10

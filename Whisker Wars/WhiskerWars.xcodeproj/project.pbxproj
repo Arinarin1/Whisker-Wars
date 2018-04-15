@@ -14,6 +14,13 @@
 		532508C71EB7C3660043B779 /* tapToBegin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532508C31EB7C3660043B779 /* tapToBegin.swift */; };
 		532508D91EB7CA7D0043B779 /* Whisker_Wars.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 532508D71EB7CA7D0043B779 /* Whisker_Wars.xcdatamodeld */; };
 		532D04A52081DEDB007C00DA /* extraLife.png in Resources */ = {isa = PBXBuildFile; fileRef = 532D04A42081DEDA007C00DA /* extraLife.png */; };
+		532D04AC2082CF37007C00DA /* coins6.png in Resources */ = {isa = PBXBuildFile; fileRef = 532D04A62082CF2C007C00DA /* coins6.png */; };
+		532D04AD2082CF37007C00DA /* coins1.png in Resources */ = {isa = PBXBuildFile; fileRef = 532D04A72082CF2F007C00DA /* coins1.png */; };
+		532D04AE2082CF37007C00DA /* coin4.png in Resources */ = {isa = PBXBuildFile; fileRef = 532D04A82082CF30007C00DA /* coin4.png */; };
+		532D04AF2082CF37007C00DA /* coins3.png in Resources */ = {isa = PBXBuildFile; fileRef = 532D04A92082CF31007C00DA /* coins3.png */; };
+		532D04B02082CF37007C00DA /* coins2.png in Resources */ = {isa = PBXBuildFile; fileRef = 532D04AA2082CF34007C00DA /* coins2.png */; };
+		532D04B12082CF37007C00DA /* coins5.png in Resources */ = {isa = PBXBuildFile; fileRef = 532D04AB2082CF36007C00DA /* coins5.png */; };
+		532D04B52082F98F007C00DA /* NewBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 532D04B42082F98D007C00DA /* NewBack.png */; };
 		532E677C202EAFAF0011A16C /* coinSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 532E677B202EAFAA0011A16C /* coinSound.mp3 */; };
 		533300E1207088B200286DF5 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 533300E0207088A900286DF5 /* 1.mp3 */; };
 		533300EB2070A31300286DF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533300EA2070A31300286DF5 /* Foundation.framework */; };
@@ -147,6 +154,13 @@
 		532508C31EB7C3660043B779 /* tapToBegin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tapToBegin.swift; sourceTree = "<group>"; };
 		532508D81EB7CA7D0043B779 /* Whisker_Wars.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Whisker_Wars.xcdatamodel; sourceTree = "<group>"; };
 		532D04A42081DEDA007C00DA /* extraLife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = extraLife.png; sourceTree = "<group>"; };
+		532D04A62082CF2C007C00DA /* coins6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coins6.png; sourceTree = "<group>"; };
+		532D04A72082CF2F007C00DA /* coins1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coins1.png; sourceTree = "<group>"; };
+		532D04A82082CF30007C00DA /* coin4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin4.png; sourceTree = "<group>"; };
+		532D04A92082CF31007C00DA /* coins3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coins3.png; sourceTree = "<group>"; };
+		532D04AA2082CF34007C00DA /* coins2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coins2.png; sourceTree = "<group>"; };
+		532D04AB2082CF36007C00DA /* coins5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coins5.png; sourceTree = "<group>"; };
+		532D04B42082F98D007C00DA /* NewBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewBack.png; sourceTree = "<group>"; };
 		532E677B202EAFAA0011A16C /* coinSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coinSound.mp3; sourceTree = "<group>"; };
 		533300E0207088A900286DF5 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
 		533300EA2070A31300286DF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -308,6 +322,13 @@
 		530DAC6B1ECCC3F300E05433 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				532D04B42082F98D007C00DA /* NewBack.png */,
+				532D04A82082CF30007C00DA /* coin4.png */,
+				532D04A72082CF2F007C00DA /* coins1.png */,
+				532D04AA2082CF34007C00DA /* coins2.png */,
+				532D04A92082CF31007C00DA /* coins3.png */,
+				532D04AB2082CF36007C00DA /* coins5.png */,
+				532D04A62082CF2C007C00DA /* coins6.png */,
 				532D04A42081DEDA007C00DA /* extraLife.png */,
 				5368EF3C2081278F007DDF8E /* info2.png */,
 				5368EF39208125F3007DDF8E /* introHelp.png */,
@@ -550,6 +571,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				532D04B52082F98F007C00DA /* NewBack.png in Resources */,
 				533300E1207088B200286DF5 /* 1.mp3 in Resources */,
 				53B782C9201E9E60002D5AD4 /* Meloody-2.m4a in Resources */,
 				5368EF3520806A63007DDF8E /* powerup4Icon.png in Resources */,
@@ -567,6 +589,7 @@
 				53A5AC7120217A6E00C21B5A /* privateLickens.png in Resources */,
 				53F1E2EF1E7B151700C13280 /* whiskerWarIconNoBack.png in Resources */,
 				53CC1206202E7EFB0017ECD1 /* WWFINAL.png in Resources */,
+				532D04AC2082CF37007C00DA /* coins6.png in Resources */,
 				533403681EA946BE00A2F2D6 /* meteor.png in Resources */,
 				539C4F142061FECB00EBF2EA /* achiveMent.png in Resources */,
 				53A045282073EAAD00E38E73 /* bonus2.png in Resources */,
@@ -577,6 +600,7 @@
 				533403641EA6CEC000A2F2D6 /* bulletWave.png in Resources */,
 				53A045252073EAAD00E38E73 /* bonus6.png in Resources */,
 				539BB1FC202F8E1F00820E20 /* fishShip.png in Resources */,
+				532D04B12082CF37007C00DA /* coins5.png in Resources */,
 				53F1E2731E5CDA8900C13280 /* Main.storyboard in Resources */,
 				53F1E26A1E5CDA8900C13280 /* GameScene.sks in Resources */,
 				53F1E2751E5CDA8A00C13280 /* Assets.xcassets in Resources */,
@@ -593,6 +617,7 @@
 				5375BB921E847CCF0058D376 /* setting@2x.png in Resources */,
 				53A045332073ED6D00E38E73 /* double4.png in Resources */,
 				53B782CF201EF7E2002D5AD4 /* upgradeCat.png in Resources */,
+				532D04AF2082CF37007C00DA /* coins3.png in Resources */,
 				5368EF37208110ED007DDF8E /* startingSound.wav in Resources */,
 				5334036D1EA9DBAE00A2F2D6 /* pressThumb.png in Resources */,
 				5334B17D2027F90400E56A50 /* hitTwiceBackground.png in Resources */,
@@ -601,6 +626,7 @@
 				53F1E2DF1E761EBB00C13280 /* House-Paint-Slab.ttf in Resources */,
 				53A045312073ED6D00E38E73 /* double1.png in Resources */,
 				53CC1204202E7EFB0017ECD1 /* WWHitOnce.png in Resources */,
+				532D04B02082CF37007C00DA /* coins2.png in Resources */,
 				53A045432074048D00E38E73 /* bonus5x2.png in Resources */,
 				53F1E2781E5CDA8A00C13280 /* LaunchScreen.storyboard in Resources */,
 				53F1E2DC1E733FA100C13280 /* themeSound.mp3 in Resources */,
@@ -629,11 +655,13 @@
 				533403621EA5311A00A2F2D6 /* leftArm.png in Resources */,
 				539C0EF820728C1B00017384 /* MONEY_2-05-512.png in Resources */,
 				539C0EF620728A0C00017384 /* MONEY_2-06-512.png in Resources */,
+				532D04AD2082CF37007C00DA /* coins1.png in Resources */,
 				533403611EA5311A00A2F2D6 /* privateWhiskers.png in Resources */,
 				5334036E1EA9DBAF00A2F2D6 /* dragThumb.png in Resources */,
 				53A0453F2074048D00E38E73 /* bonus1.5x2.png in Resources */,
 				53A045402074048D00E38E73 /* bonus6x2.png in Resources */,
 				53A045292073EAAD00E38E73 /* bonus3.png in Resources */,
+				532D04AE2082CF37007C00DA /* coin4.png in Resources */,
 				53F1E2D61E73365300C13280 /* explosionWhiskerWars.png in Resources */,
 				53F95360205250E100B169BA /* My Movie 7.gif in Resources */,
 				53F1E2D91E733E7000C13280 /* explosion_01.wav in Resources */,

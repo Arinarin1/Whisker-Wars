@@ -41,48 +41,7 @@ class playerPickerVC: UIViewController {
     
     override func viewDidLoad() {
 
-        UIView.animate(withDuration: 1, animations: {
-            self.cat1.frame.origin.y -= 2.5
-        }) {_ in
-            UIView.animateKeyframes(withDuration: 1.2, delay: 0.65, options: [.autoreverse, .allowUserInteraction, .repeat, .beginFromCurrentState], animations: {
-                self.cat1.frame.origin.y += 2.5
-            })
-        }
-        UIView.animate(withDuration: 1, animations: {
-            self.cat2.frame.origin.y -= 2.5
-        }) {_ in
-            UIView.animateKeyframes(withDuration: 1.2, delay: 0.10, options: [.autoreverse, .allowUserInteraction, .repeat, .beginFromCurrentState], animations: {
-                self.cat2.frame.origin.y += 2.5
-            })
-        }
-        UIView.animate(withDuration: 1, animations: {
-            self.cat3.frame.origin.y -= 2.5
-        }) {_ in
-            UIView.animateKeyframes(withDuration: 1.2, delay: 0.95, options: [.autoreverse, .allowUserInteraction, .repeat, .beginFromCurrentState], animations: {
-                self.cat3.frame.origin.y += 2.5
-            })
-        }
-        UIView.animate(withDuration: 1, animations: {
-            self.cat4.frame.origin.y -= 2.5
-        }) {_ in
-            UIView.animateKeyframes(withDuration: 1.2, delay: 0.70, options: [.autoreverse, .allowUserInteraction, .repeat, .beginFromCurrentState], animations: {
-                self.cat4.frame.origin.y += 2.5
-            })
-        }
-        UIView.animate(withDuration: 1, animations: {
-            self.cat5.frame.origin.y -= 2.5
-        }) {_ in
-            UIView.animateKeyframes(withDuration: 1.2, delay: 0.20, options: [.autoreverse, .allowUserInteraction, .repeat, .beginFromCurrentState], animations: {
-                self.cat5.frame.origin.y += 2.5
-            })
-        }
-        UIView.animate(withDuration: 1, animations: {
-            self.cat6.frame.origin.y -= 2.5
-        }) {_ in
-            UIView.animateKeyframes(withDuration: 1.2, delay: 0.61, options: [.autoreverse, .allowUserInteraction, .repeat, .beginFromCurrentState], animations: {
-                self.cat6.frame.origin.y += 2.5
-            })
-        }
+       moveCats()
         
         
         view1.layer.cornerRadius = 5
@@ -106,13 +65,13 @@ class playerPickerVC: UIViewController {
        
               catBtn2.setTitle("Play", for: .normal)
             catBtn2.titleLabel?.font = UIFont(name: "House Paint Slab", size:23)
-           
+           moveCats()
             
         } else {
             
               catBtn2.setTitle("200", for: .normal)
             catBtn2.titleLabel?.font = UIFont(name: "House Paint Slab", size:23)
-           
+           moveCats()
         }
         
         
@@ -126,7 +85,7 @@ class playerPickerVC: UIViewController {
             
             catBtn3.setTitle("500", for: .normal)
             catBtn3.titleLabel?.font = UIFont(name: "House Paint Slab", size:23)
-            
+            moveCats()
         }
         
         if defaults.string(forKey: "Purchased3") == "Purchased3" {
@@ -139,17 +98,17 @@ class playerPickerVC: UIViewController {
             
             catBtn4.setTitle("1000", for: .normal)
             catBtn4.titleLabel?.font = UIFont(name: "House Paint Slab", size:23)
-            
+            moveCats()
         }
         
         if defaults.string(forKey: "Purchased4") == "Purchased4" {
             
             catBtn5.setTitle("Play", for: .normal)
             catBtn5.titleLabel?.font = UIFont(name: "House Paint Slab", size:23)
-            
+            moveCats()
             
         } else {
-            
+            moveCats()
             catBtn5.setTitle("2000", for: .normal)
             catBtn5.titleLabel?.font = UIFont(name: "House Paint Slab", size:23)
             
@@ -159,13 +118,13 @@ class playerPickerVC: UIViewController {
             
             catBtn6.setTitle("Play", for: .normal)
             catBtn6.titleLabel?.font = UIFont(name: "House Paint Slab", size:23)
-            
+            moveCats()
             
         } else {
             
             catBtn6.setTitle("4000", for: .normal)
             catBtn6.titleLabel?.font = UIFont(name: "House Paint Slab", size:23)
-            
+            moveCats()
         }
         
     }
@@ -178,10 +137,59 @@ class playerPickerVC: UIViewController {
      
     }
     
+    func moveCats() {
+        
+        UIView.animate(withDuration: 1, animations: {
+            self.cat1.frame.origin.y -= 2.1
+        }) {_ in
+            UIView.animateKeyframes(withDuration: 1.4, delay: 0.39, options: [.autoreverse, .allowUserInteraction, .repeat, .beginFromCurrentState], animations: {
+                self.cat1.frame.origin.y += 2.1
+            })
+        }
+        UIView.animate(withDuration: 1, animations: {
+            self.cat2.frame.origin.y -= 2.1
+        }) {_ in
+            UIView.animateKeyframes(withDuration: 1.4, delay: 0.10, options: [.autoreverse, .allowUserInteraction, .repeat, .beginFromCurrentState], animations: {
+                self.cat2.frame.origin.y += 2.1
+            })
+        }
+        UIView.animate(withDuration: 1, animations: {
+            self.cat3.frame.origin.y -= 2.1
+        }) {_ in
+            UIView.animateKeyframes(withDuration: 1.4, delay: 0.95, options: [.autoreverse, .allowUserInteraction, .repeat, .beginFromCurrentState], animations: {
+                self.cat3.frame.origin.y += 2.1
+            })
+        }
+        UIView.animate(withDuration: 1, animations: {
+            self.cat4.frame.origin.y -= 2.1
+        }) {_ in
+            UIView.animateKeyframes(withDuration: 1.4, delay: 0.70, options: [.autoreverse, .allowUserInteraction, .repeat, .beginFromCurrentState], animations: {
+                self.cat4.frame.origin.y += 2.1
+            })
+        }
+        UIView.animate(withDuration: 1, animations: {
+            self.cat5.frame.origin.y -= 2.1
+        }) {_ in
+            UIView.animateKeyframes(withDuration: 1.4, delay: 0.20, options: [.autoreverse, .allowUserInteraction, .repeat, .beginFromCurrentState], animations: {
+                self.cat5.frame.origin.y += 2.1
+            })
+        }
+       // UIView.animate(withDuration: 1, animations: {
+      //      self.cat6.frame.origin.y -= 2.1
+    //    }) {_ in
+      //      UIView.animateKeyframes(withDuration: 1.4, delay: 0.61, options: /[.autoreverse, .allowUserInteraction, .repeat, .beginFromCurrentState], animations: {
+      //          self.cat6.frame.origin.y += 2.1
+       //     })
+        //}
+        
+    }
+    
+    
     @IBAction func playCat2(_ sender: Any) {
         
         if catBtn2.titleLabel?.text == "Play" {
             
+          
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
             let nextViewController = storyBoard.instantiateViewController(withIdentifier: "map2") as! map2VC
             self.present(nextViewController, animated:true, completion:nil)
@@ -192,6 +200,7 @@ class playerPickerVC: UIViewController {
         
         if numOfCoins > 199 {
             
+           
             print("User has enough")
             catBtn2.setTitle("Play", for: .normal)
             catBtn2.titleLabel?.font = UIFont(name: "House Paint Slab", size:23)
@@ -201,6 +210,7 @@ class playerPickerVC: UIViewController {
             defaults.set(numOfCoins - 200, forKey: "numOfCoins")
             
         } else {
+            
             
             print("Not enough coins")
           //  catBtn2.backgroundColor = UIColor(red: 255/255, green: 85/255, blue: 67/255, alpha: 1)
@@ -234,6 +244,7 @@ class playerPickerVC: UIViewController {
         
         if numOfCoins > 499 {
             
+           
             print("User has enough")
             catBtn3.setTitle("Play", for: .normal)
             catBtn3.titleLabel?.font = UIFont(name: "House Paint Slab", size:23)
@@ -246,7 +257,7 @@ class playerPickerVC: UIViewController {
             
             
         } else {
-            
+           
             print("Not enough coins")
             //  catBtn2.backgroundColor = UIColor(red: 255/255, green: 85/255, blue: 67/255, alpha: 1)
             //  catBtn2.backgroundColor = UIColor(red: 0/255, green: 235/255, blue: 151/255, alpha: 1)
@@ -281,6 +292,7 @@ class playerPickerVC: UIViewController {
         
         if numOfCoins > 999 {
             
+          
             print("User has enough")
             catBtn4.setTitle("Play", for: .normal)
             catBtn4.titleLabel?.font = UIFont(name: "House Paint Slab", size:23)
@@ -295,6 +307,7 @@ class playerPickerVC: UIViewController {
             
         } else {
             
+         
             print("Not enough coins")
             //  catBtn4.backgroundColor = UIColor(red: 255/255, green: 85/255, blue: 67/255, alpha: 1)
             //  catBtn4.backgroundColor = UIColor(red: 0/255, green: 235/255, blue: 151/255, alpha: 1)
@@ -329,6 +342,7 @@ class playerPickerVC: UIViewController {
         
         if numOfCoins > 1999 {
             
+        
             print("User has enough")
             catBtn5.setTitle("Play", for: .normal)
             catBtn5.titleLabel?.font = UIFont(name: "House Paint Slab", size:23)
@@ -341,6 +355,7 @@ class playerPickerVC: UIViewController {
             
         } else {
             
+       
             print("Not enough coins")
             //  catBtn4.backgroundColor = UIColor(red: 255/255, green: 85/255, blue: 67/255, alpha: 1)
             //  catBtn4.backgroundColor = UIColor(red: 0/255, green: 235/255, blue: 151/255, alpha: 1)
@@ -383,6 +398,7 @@ class playerPickerVC: UIViewController {
             
         } else {
             
+          
             print("Not enough coins")
             //  catBtn4.backgroundColor = UIColor(red: 255/255, green: 85/255, blue: 67/255, alpha: 1)
             //  catBtn4.backgroundColor = UIColor(red: 0/255, green: 235/255, blue: 151/255, alpha: 1)
