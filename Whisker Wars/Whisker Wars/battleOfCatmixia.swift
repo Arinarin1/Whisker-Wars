@@ -30,6 +30,7 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
     let player = SKSpriteNode(imageNamed: "privateWhiskers.png")
     let catmixiaPlanet = SKSpriteNode(imageNamed: "planetCatmixia")
     
+   //  let shockwave = SKSpriteNode(imageNamed: "shockwave.png")
     
     let bulletSound = SKAction.playSoundFileNamed("Cat-meow-10.mp3", waitForCompletion: false)
     let explosionSound = SKAction.playSoundFileNamed("explosion_01.wav", waitForCompletion: false)
@@ -166,7 +167,7 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
         
         if defaults.string(forKey: "powerup3Purchased") == "powerup3Purchased" {
         
-        fireShockWaveLbl.text = "Shock Wave"
+        fireShockWaveLbl.text = "⌒"
         fireShockWaveLbl.name = "fireShockWave"
         fireShockWaveLbl.fontSize = 68
         fireShockWaveLbl.zPosition = 100
@@ -343,7 +344,7 @@ class battleOfCatmixia: SKScene, SKPhysicsContactDelegate {
       
         
         
-        if gameScore == 4 || gameScore == 16 || gameScore == 30 || gameScore == 67 || gameScore == 100 || gameScore == 150 || gameScore == 200 || gameScore == 230 || gameScore == 280 || gameScore == 330 {
+        if gameScore == 4 || gameScore == 20 || gameScore == 40 || gameScore == 60 || gameScore == 110 || gameScore == 150 || gameScore == 200 || gameScore == 230 || gameScore == 280 || gameScore == 330 {
             startNewDifficulty()
             startNewMeteorDifficulty()
             startNewSuperMeteorDifficulty()

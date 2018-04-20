@@ -229,7 +229,7 @@ class powerupVC: UIViewController {
     @IBAction func powerup3(_ sender: Any) {
         
         // success user has enough coins and high score is met
-        if numOfCoins > 29 && highScoreNumber > 99 {
+        if numOfCoins > 29 && highScoreNumber > 0 {
             
             print("Success")
             qLbl3.text = "1/1"

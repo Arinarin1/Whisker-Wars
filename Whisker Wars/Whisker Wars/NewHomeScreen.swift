@@ -15,6 +15,7 @@ import AVFoundation
 import CoreData
 import StoreKit
 import SwiftyStoreKit
+import Social
 
 class NewHomeScreen: UIViewController {
     
@@ -30,6 +31,9 @@ class NewHomeScreen: UIViewController {
     @IBOutlet weak var numberOfCoins: UILabel!
     @IBOutlet weak var scoreLbl: UILabel!
     @IBOutlet weak var privateWhiskers: UIImageView!
+    
+    
+    var highScoreNumber = UserDefaults().integer(forKey: "highScoreSaved")
     
     override func viewDidLoad() {
         
@@ -126,7 +130,7 @@ class NewHomeScreen: UIViewController {
         
         
         
-        var highScoreNumber = defaults.integer(forKey: "highScoreSaved")
+      //  var highScoreNumber = defaults.integer(forKey: "highScoreSaved")
         scoreLbl.text = "\(highScoreNumber)"
         
        var numOfCoins = defaults.integer(forKey: "numOfCoins")
@@ -136,12 +140,17 @@ class NewHomeScreen: UIViewController {
     
     @IBAction func playAction(_ sender: Any) {
         
-       // let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-      //  let nextViewController = storyBoard.instantiateViewController(withIdentifier: "playerPicker") as! playerPickerVC
-      //  self.present(nextViewController, animated:true, completion:nil)
+        playBtn.transform = CGAffineTransform(scaleX: 0.83, y: 0.83)
         
-      //  var numOfCoins = defaults.integer(forKey: "numOfCoins")
-      // defaults.set(numOfCoins + 200, forKey: "numOfCoins")
+        UIView.animate(withDuration: 2.0,
+                       delay: 0,
+                       usingSpringWithDamping: 0.2,
+                       initialSpringVelocity: 6.0,
+                       options: .allowUserInteraction,
+                       animations: { [weak self] in
+                        self?.playBtn.transform = .identity
+            },
+                       completion: nil)
         
        audioPlayer.stop()
        audioPlayer.volume = 0
@@ -159,6 +168,18 @@ class NewHomeScreen: UIViewController {
     
     @IBAction func upgradeBtnPressed(_ sender: Any) {
         
+        upgradeBtn.transform = CGAffineTransform(scaleX: 0.83, y: 0.83)
+        
+        UIView.animate(withDuration: 2.0,
+                       delay: 0,
+                       usingSpringWithDamping: 0.2,
+                       initialSpringVelocity: 6.0,
+                       options: .allowUserInteraction,
+                       animations: { [weak self] in
+                        self?.upgradeBtn.transform = .identity
+            },
+                       completion: nil)
+        
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "coinStore") as! coinStoreVC
         self.present(nextViewController, animated:true, completion:nil)
@@ -167,7 +188,37 @@ class NewHomeScreen: UIViewController {
     }
     @IBAction func shareBtnPressed(_ sender: Any) {
         
-      //  audioPlayer.stop()
+        
+        
+        shareBtn.transform = CGAffineTransform(scaleX: 0.83, y: 0.83)
+        
+        UIView.animate(withDuration: 2.0,
+                       delay: 0,
+                       usingSpringWithDamping: 0.2,
+                       initialSpringVelocity: 6.0,
+                       options: .allowUserInteraction,
+                       animations: { [weak self] in
+                        self?.shareBtn.transform = .identity
+            },
+                       completion: nil)
+        
+        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter) {
+            
+            let post = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            
+            post!.setInitialText("My high score on @WhiskerWarsGame is \(highScoreNumber). Eat it grandma. Now on the iOS App Store! #WhiskerWars")
+            post!.add(UIImage(named: "whiskerWarsPromo.png"))
+            
+            
+            self.present(post!, animated: true, completion: nil)
+            
+            
+        } else {
+            
+            self.showAlert(service: "Twitter")
+            
+        }
+        
         
     }
     @IBAction func settingsBtnPressed(_ sender: Any) {
@@ -177,6 +228,18 @@ class NewHomeScreen: UIViewController {
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "settings") as! settingsVC
         self.present(nextViewController, animated:true, completion:nil)
         audioPlayer.stop()
+        
+    }
+    
+    
+    func showAlert(service:String) {
+        
+        let alert = UIAlertController(title: "Oops", message: "Looks like you're not connected to \(service) on this device.", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Dismiss", style: .cancel, handler: nil)
+        
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+        
         
     }
     

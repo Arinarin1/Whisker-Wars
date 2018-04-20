@@ -343,7 +343,7 @@ class battleOfCatimixia4: SKScene, SKPhysicsContactDelegate {
         
         
         
-        if gameScore == 4 || gameScore == 16 || gameScore == 30 || gameScore == 67 || gameScore == 100 || gameScore == 150 || gameScore == 200 || gameScore == 230 || gameScore == 280 || gameScore == 330 {
+        if gameScore == 4 || gameScore == 20 || gameScore == 40 || gameScore == 60 || gameScore == 110 || gameScore == 150 || gameScore == 200 || gameScore == 230 || gameScore == 280 || gameScore == 330 {
             startNewDifficulty()
             startNewMeteorDifficulty()
             startNewSuperMeteorDifficulty()
@@ -872,16 +872,16 @@ class battleOfCatimixia4: SKScene, SKPhysicsContactDelegate {
         switch levelNumber {
         case 1: levelDuration = 3.5
         self.defaults.set("Startmeowbot", forKey: "Startmeowbot")
-        case 2: levelDuration = 2.0
+        case 2: levelDuration = 2.5
         self.defaults.set("meowbot2", forKey: "meowbot2")
         self.defaults.set("Startmeowbot2", forKey: "Startmeowbot")
-        case 3: levelDuration = 1.3
+        case 3: levelDuration = 2.0
         self.defaults.set("meowbot3", forKey: "meowbot3")
         self.defaults.set("meowbot", forKey: "meowbot2")
-        case 4: levelDuration = 1.3
+        case 4: levelDuration = 1.6
         self.defaults.set("meowbot4", forKey: "meowbot4")
         self.defaults.set("meowbot", forKey: "meowbot3")
-        case 5: levelDuration = 1.3
+        case 5: levelDuration = 1.4
         self.defaults.set("meowbot5", forKey: "meowbot5")
         self.defaults.set("meowbot", forKey: "meowbot4")
         case 6: levelDuration = 1.3
@@ -899,6 +899,7 @@ class battleOfCatimixia4: SKScene, SKPhysicsContactDelegate {
         case 10: levelDuration = 1.1
         self.defaults.set("meowbot10", forKey: "meowbot10")
         self.defaults.set("meowbot", forKey: "meowbot9")
+            
             
             
         default:
@@ -937,27 +938,27 @@ class battleOfCatimixia4: SKScene, SKPhysicsContactDelegate {
             case 1: levelDuration = 4.2
             self.defaults.set("Startmeteor", forKey: "StartMeteor")
             self.defaults.set("meteor", forKey: "Startmeteor")
-            case 2: levelDuration = 3.2
+            case 2: levelDuration = 3.8
             self.defaults.set("meteor2", forKey: "meteor2")
-            case 3: levelDuration = 2.8
+            case 3: levelDuration = 3.7
             self.defaults.set("meteor3", forKey: "meteor3")
             self.defaults.set("meteor", forKey: "meteor2")
-            case 4: levelDuration = 2.6
+            case 4: levelDuration = 3.5
             self.defaults.set("meteor4", forKey: "meteor4")
             self.defaults.set("meteor", forKey: "meteor3")
-            case 5: levelDuration = 2.7
+            case 5: levelDuration = 3.2
             self.defaults.set("meteor5", forKey: "meteor5")
             self.defaults.set("meteor", forKey: "meteor4")
-            case 6: levelDuration = 2.7
+            case 6: levelDuration = 2.8
             self.defaults.set("meteor6", forKey: "meteor6")
             self.defaults.set("meteor", forKey: "meteor5")
-            case 7: levelDuration = 2.9
+            case 7: levelDuration = 2.8
             self.defaults.set("meteor7", forKey: "meteor7")
             self.defaults.set("meteor", forKey: "meteor6")
             case 8: levelDuration = 2.7
             self.defaults.set("meteor8", forKey: "meteor8")
             self.defaults.set("meteor", forKey: "meteor7")
-            case 9: levelDuration = 2.4
+            case 9: levelDuration = 2.5
             self.defaults.set("meteor9", forKey: "meteor9")
             self.defaults.set("meteor", forKey: "meteor8")
             case 10: levelDuration = 2.2
@@ -982,22 +983,22 @@ class battleOfCatimixia4: SKScene, SKPhysicsContactDelegate {
             switch levelNumber {
             case 1: levelDuration = 4.0
             self.defaults.set("Startmeteor", forKey: "Startmeteor")
-            case 2: levelDuration = 2.9
+            case 2: levelDuration = 3.5
             self.defaults.set("meteor2", forKey: "meteor2")
             self.defaults.set("meteor", forKey: "Startmeteor")
-            case 3: levelDuration = 2.7
+            case 3: levelDuration = 3.3
             self.defaults.set("meteor3", forKey: "meteor3")
             self.defaults.set("meteor", forKey: "meteor2")
-            case 4: levelDuration = 2.5
+            case 4: levelDuration = 3.1
             self.defaults.set("meteor4", forKey: "meteor4")
             self.defaults.set("meteor", forKey: "meteor3")
-            case 5: levelDuration = 2.2
+            case 5: levelDuration = 2.9
             self.defaults.set("meteor5", forKey: "meteor5")
             self.defaults.set("meteor", forKey: "meteor4")
-            case 6: levelDuration = 2.0
+            case 6: levelDuration = 2.7
             self.defaults.set("meteor6", forKey: "meteor6")
             self.defaults.set("meteor", forKey: "meteor5")
-            case 7: levelDuration = 2.0
+            case 7: levelDuration = 2.5
             self.defaults.set("meteor7", forKey: "meteor7")
             self.defaults.set("meteor", forKey: "meteor6")
             case 8: levelDuration = 2.3
@@ -1038,16 +1039,16 @@ class battleOfCatimixia4: SKScene, SKPhysicsContactDelegate {
         var levelDuration = TimeInterval()
         
         switch levelNumber {
-        case 1: levelDuration = 11
-        case 2: levelDuration = 11
-        case 3: levelDuration = 11
-        case 4: levelDuration = 11
-        case 5: levelDuration = 10
-        case 6: levelDuration = 9
-        case 7: levelDuration = 9
-        case 8: levelDuration = 8
+        case 1: levelDuration = 17
+        case 2: levelDuration = 17
+        case 3: levelDuration = 15
+        case 4: levelDuration = 12
+        case 5: levelDuration = 11
+        case 6: levelDuration = 10
+        case 7: levelDuration = 10
+        case 8: levelDuration = 9
         case 9: levelDuration = 7
-        case 10: levelDuration = 6
+        case 10: levelDuration = 7
             
         default:
             levelDuration = 10
@@ -1256,6 +1257,7 @@ class battleOfCatimixia4: SKScene, SKPhysicsContactDelegate {
             }
             
         }
+        
         if defaults.string(forKey: "meowbot4") == "meowbot4" {
             print("Running MeowBot 4 spawn faster")
             let moveEnemy = SKAction.move(to: endPoint, duration: 4.2)
@@ -1777,11 +1779,6 @@ class battleOfCatimixia4: SKScene, SKPhysicsContactDelegate {
         
         
     }
-    
-    
-    
-    
-    
     
     
 }

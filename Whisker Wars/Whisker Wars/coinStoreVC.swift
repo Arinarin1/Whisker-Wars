@@ -23,8 +23,6 @@ enum RegisteredPurchase: String {
     
 }
 
-
-
 class NetworkActivityIndicatorManager: NSObject {
     
     private static var loadingCount = 0
@@ -64,6 +62,10 @@ class coinStoreVC: UIViewController {
     @IBOutlet weak var removeAdsBtn: UIButton!
     @IBOutlet weak var restorePurchases: UIButton!
     @IBOutlet weak var watchFreeVideoBtn: UIButton!
+    @IBOutlet weak var watchLbl: UILabel!
+    
+    @IBOutlet weak var freeCoinsInfo: UILabel!
+    
     
     let defaults = UserDefaults()
     var numOfCoins = UserDefaults().integer(forKey: "numOfCoins")
@@ -91,6 +93,33 @@ class coinStoreVC: UIViewController {
         super.viewDidLoad()
         
         Chartboost.setDelegate(self)
+        
+    
+      
+        
+          if defaults.string(forKey: "4") == "1" {
+            
+            watchLbl.text = "1/4"
+        }
+        
+        if defaults.string(forKey: "4") == "2" {
+            
+            watchLbl.text = "2/4"
+        }
+        
+        if defaults.string(forKey: "4") == "3" {
+            
+            watchLbl.text = "3/4"
+        }
+        
+        if defaults.string(forKey: "4") == "4" {
+            
+            watchLbl.text = "4/4"
+            watchFreeVideoBtn.isEnabled = false
+            freeCoinsInfo.text! = "Maxed out. No worries, this will reset with every game update."
+            watchFreeVideoBtn.isHidden = true
+        }
+        
         
         
          if defaults.string(forKey: "doubleCoins") == "double" {
@@ -383,16 +412,14 @@ class coinStoreVC: UIViewController {
     
     @IBAction func watchFreeVideo(_ sender: Any) {
         
+          Chartboost.setDelegate(self)
          Chartboost.start(withAppId: "5ac06578f7c1590bbdfdf5d1", appSignature: "f57aed811e696e414e94b009afae7d594a96375e", delegate: nil)
-        Chartboost.showRewardedVideo(CBLocationMainMenu)
+        Chartboost.showInterstitial(CBLocationMainMenu)
         
-        didCompleteRewardedVideo(location: CBLocationMainMenu, withReward: 5)
+        numberOfCoins.text! = "\(defaults.integer(forKey: "numOfCoins") + 5)"
+        defaults.set(numOfCoins + 5, forKey: "numOfCoins")
         
-        
-        Chartboost.setDelegate(self)
-        
-        
-        
+     
         
         watchFreeVideoBtn.transform = CGAffineTransform(scaleX: 0.83, y: 0.83)
         UIView.animate(withDuration: 2.0,
@@ -406,8 +433,48 @@ class coinStoreVC: UIViewController {
                        completion: nil)
         
         
+        if watchLbl.text! == "0/4" {
+            
+            //watchLbl.text! = "1/4"
+              self.defaults.set("1", forKey: "4")
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "coinStore") as! coinStoreVC
+            self.present(nextViewController, animated:false, completion:nil)
+            
+        }
+
+        if watchLbl.text! == "1/4" {
+            
+           // watchLbl.text! = "2/4"
+            self.defaults.set("2", forKey: "4")
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "coinStore") as! coinStoreVC
+            self.present(nextViewController, animated:false, completion:nil)
+            
+        }
         
-    print("Tappped")
+        if watchLbl.text! == "2/4" {
+            
+          //  watchLbl.text! = "3/4"
+            self.defaults.set("3", forKey: "4")
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "coinStore") as! coinStoreVC
+            self.present(nextViewController, animated:false, completion:nil)
+            
+        }
+        
+        if watchLbl.text! == "3/4" {
+            
+           // watchLbl.text! = "4/4"
+            self.defaults.set("4", forKey: "4")
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "coinStore") as! coinStoreVC
+            self.present(nextViewController, animated:false, completion:nil)
+            
+        }
+        
+        
+        
         
     }
     
@@ -450,7 +517,7 @@ extension coinStoreVC: ChartboostDelegate {
     func didClickRewardedVideo(location: String!) {
     }
     
-    func didCompleteRewardedVideo(location: String!, withReward reward: Int32) {
+    func didCompleteRewardedVideo(location: String!, withReward reward: Int) {
         
         numberOfCoins.text! = "\(defaults.integer(forKey: "numOfCoins") + 5)"
         defaults.set(numOfCoins + 5, forKey: "numOfCoins")

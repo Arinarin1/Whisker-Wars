@@ -30,7 +30,7 @@ class tapToBegin1: SKScene {
         self.addChild(tip)
         
         
-        let background = SKSpriteNode(imageNamed: "WWFINAL.png")
+        let background = SKSpriteNode(imageNamed: "NewBack.png")
         background.size = self.size
         background.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
         background.zPosition = 0
